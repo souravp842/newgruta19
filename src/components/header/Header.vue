@@ -4,7 +4,7 @@
       <!-- Logo -->
       <router-link to="/" class="navbar-brand d-flex align-items-center">
 
-         <!-- <img src="C:\Users\my pc\Downloads/vit-logo (2).png" alt="Logo" height="30" class="me-2" /> -->
+         <img src="@/assets/images/logo.png" alt="Logo" height="30" class="me-2" />
 
       </router-link>
 
@@ -45,11 +45,11 @@ export default {
     return {
       menuOpen: false,
       navLinks: [
-  { text: 'Espacios', to: 'contact'},
-  { text: 'Servicios', to: 'link2' },
-  { text: 'Galería', to: 'link3' },
-  { text: 'Nosotros', to: 'link4' },
-  { text: 'Promociones', to: 'link5' }
+  { text: 'Espacios', to: '#/contact'},
+  { text: 'Servicios', to: '#/link2' },
+  { text: 'Galería', to: '#/link3' },
+  { text: 'Nosotros', to: '#/link4' },
+  { text: 'Promociones', to: '#/link5' }
 ]
     };
   },

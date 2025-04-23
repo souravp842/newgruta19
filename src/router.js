@@ -19,7 +19,7 @@
 
 
 // src/router.js
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory  } from 'vue-router'
 
 // Import the components you want to use
 import Contact from './components/content/Contact.vue'
@@ -38,7 +38,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/vue/gruta19-corp/'), // Set base URL here
+  history: createWebHashHistory('/vue/gruta19-corp/#/'), // Set base URL here
   routes
 })
 
