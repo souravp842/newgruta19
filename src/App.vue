@@ -40,7 +40,7 @@ import Review from './components/content/Review.vue'
         </router-view>
     
         <template v-if="$route.path === '/'">
-          <center><Content1 msg="EXECUTIVE OFFICES." /></center>
+          <Content1 msg="EXECUTIVE OFFICES." />
           <Content2 msg="CONOCE GRUTA 19 CORP" price="$350" message1="Areas comunes" message2="Internet da alta velocidad" />
           <Content2 price="$3,500" message1="Hora de sala de juntas 6 personas / mes" message2="Sala de juntas one to one" />
           <Content3 msg="CONOCE NUESTRA OFERTA DE OFICINAS"/>

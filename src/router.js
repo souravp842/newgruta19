@@ -18,7 +18,7 @@
 // export default router
 
 
-// src/router/index.js
+// src/router.js
 import { createRouter, createWebHistory } from 'vue-router'
 
 // Import the components you want to use
@@ -41,5 +41,7 @@ const router = createRouter({
   history: createWebHistory('/vue/gruta19-corp/'), // Set base URL here
   routes
 })
+
+
 
 export default router

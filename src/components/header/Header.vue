@@ -3,8 +3,9 @@
     <div class="container-fluid">
       <!-- Logo -->
       <router-link to="/" class="navbar-brand d-flex align-items-center">
-        <img src="C:\Users\my pc\Pictures/image.jpg" alt="Logo" height="30" class="me-2" />
-        GRUTA CORP
+
+         <!-- <img src="C:\Users\my pc\Downloads/vit-logo (2).png" alt="Logo" height="30" class="me-2" /> -->
+
       </router-link>
 
       <!-- Toggler (for mobile) -->
@@ -36,18 +37,19 @@
 
 
 <script>
-const base = import.meta.env.BASE_URL || '/vue/gruta19-corp';
+// const base = import.meta.env.BASE_URL || '/vue/gruta19-corp';
+// const base = '/vue/gruta19-corp/';
 export default {
   name: 'Navbar',
   data() {
     return {
       menuOpen: false,
       navLinks: [
-  { text: 'Espacios', to: base + "Contact" },
-  { text: 'Servicios', to: base + 'Link2' },
-  { text: 'Galería', to: base + 'Link3' },
-  { text: 'Nosotros', to: base + 'Link4' },
-  { text: 'Promociones', to: base + 'Link5' }
+  { text: 'Espacios', to: 'contact'},
+  { text: 'Servicios', to: 'link2' },
+  { text: 'Galería', to: 'link3' },
+  { text: 'Nosotros', to: 'link4' },
+  { text: 'Promociones', to: 'link5' }
 ]
     };
   },
