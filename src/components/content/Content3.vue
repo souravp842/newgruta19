@@ -2,29 +2,15 @@
 defineProps({
   msg: {
     type: String,
-    required: false,
+    required: true,
   },
-  price: {
-    type: [String, Number],
-    required: false,
-  },
-  message1:{
-    type: [String, Number],
-    required: false
-  },
-  message2:{
-    type: [String, Number],
-    required: false
-  }
-
 })
 </script>
 
-
 <template>
-    <h5>{{ msg }}</h5>
+   <center> <h5>{{ msg }}</h5></center>
     <div class="card-container text-white p-4 rounded">
-    <h4>Day Pass</h4>
+    <h4>Excutiv Offices</h4>
     <div class="price-display mb-3">
       <span class="price">{{ price }}</span> <span class="currency">MXN</span>
     </div>
@@ -40,8 +26,6 @@ defineProps({
     <button class="btn btn-outline-orange w-100">Ver todos los servicios</button>
   </div>
 </template>
-
-
 
 <style scoped>
 @import '@/assets/main.css';

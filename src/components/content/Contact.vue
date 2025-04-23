@@ -9,7 +9,7 @@
           <li> contacto@gruta19corp.com</li>
         </ul>
       </div>
-      <form @submit.prevent="handleSubmit" class="contact-form">
+      <form  class="contact-form">
       <label>
         Nombre
         <input  type="text" required />
@@ -33,58 +33,3 @@
 
 
 
-
-<style scoped>
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  background-color: gray;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-}
-
-.contact-info {
-  max-width: 45%;
-}
-
-.contact-info h2 {
-  font-size: 1.8rem;
-}
-
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-info li {
-  margin: 0.5rem 0;
-}
-
-.contact-form {
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 6px;
-  border: none;
-  background-color: #000;
-  color: #fff;
-}
-
-.contact-form button {
-  background-color: #f97316;
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-</style>

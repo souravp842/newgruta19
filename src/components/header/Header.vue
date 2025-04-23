@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <!-- Logo -->
       <router-link to="/" class="navbar-brand d-flex align-items-center">
-        <img src="" alt="Logo" height="30" class="me-2" />
+        <img src="C:\Users\my pc\Pictures/image.jpg" alt="Logo" height="30" class="me-2" />
         GRUTA CORP
       </router-link>
 
@@ -24,7 +24,7 @@
           </li>
         </ul>
         
-        <!-- Buttons -->
+        <!-- Buttons --> 
         <div class="d-flex gap-2">
           <button class="btn btn-outline-warning">Agendar visita</button>
           <button class="btn btn-warning">Contratar</button>
@@ -36,18 +36,18 @@
 
 
 <script>
-
+const base = import.meta.env.BASE_URL || '/vue/gruta19-corp';
 export default {
   name: 'Navbar',
   data() {
     return {
       menuOpen: false,
       navLinks: [
-  { text: 'Espacios', to: "/Contact" },
-  { text: 'Servicios', to: '/servicios' },
-  { text: 'Galería', to: '/galeria' },
-  { text: 'Nosotros', to: '/nosotros' },
-  { text: 'Promociones', to: '/promociones' }
+  { text: 'Espacios', to: base + "Contact" },
+  { text: 'Servicios', to: base + 'Link2' },
+  { text: 'Galería', to: base + 'Link3' },
+  { text: 'Nosotros', to: base + 'Link4' },
+  { text: 'Promociones', to: base + 'Link5' }
 ]
     };
   },
@@ -58,7 +58,6 @@ export default {
   }
 };
 </script>
-
 
 <style scoped>
 .nav-link {
@@ -83,4 +82,8 @@ export default {
 .btn-warning:hover {
   background-color: #fb8c00;
 }
+/* .navbar{
+  position: fixed;
+  width: 100%;
+} */
 </style>

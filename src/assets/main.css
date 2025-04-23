@@ -1,6 +1,6 @@
 
-/* @import './base.css';
-
+@import './base.css';
+/* 
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,7 +35,168 @@ a,
   }
 } */
 
+/* Start Contact Page CSS */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contact-info {
+  max-width: 45%;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 0.5rem 0;
+}
+
+.contact-form {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-form button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* End Contact Page CSS */
 
 
-/* Content2 page css */
 
+/* Start Content1 Page CSS */
+
+
+/* End Content1 Page CSS */
+
+
+
+/* Start Content2 Page CSS */
+
+
+.card-container {
+  background-color: lightgray;
+  border-radius: 15px;
+  width: 320px;
+}
+.price-display .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.price-display .currency {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+.btn-orange {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+.btn-orange:hover {
+  background-color: #ef6c00;
+}
+.btn-outline-orange {
+  border: 2px solid #f57c00;
+  color: #f57c00;
+  background: transparent;
+  font-weight: 500;
+}
+.btn-outline-orange:hover {
+  background-color: #f57c00;
+  color: white;
+}
+
+/* End Content2 Page CSS */
+
+
+
+/* Start Content3 Page CSS */
+
+.card-container {
+  background-color: lightgray;
+  border-radius: 15px;
+  width: 320px;
+}
+.price-display .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.price-display .currency {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+.btn-orange {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+.btn-orange:hover {
+  background-color: #ef6c00;
+}
+.btn-outline-orange {
+  border: 2px solid #f57c00;
+  color: #f57c00;
+  background: transparent;
+  font-weight: 500;
+}
+.btn-outline-orange:hover {
+  background-color: #f57c00;
+  color: white;
+}
+
+
+/* End Content3 Page CSS */
+
+
+
+
+
+/* Start Event Page CSS */
+
+
+/* End Event Page CSS */
+
+
+
+/* Start Meeting Page CSS */
+
+
+/* End Meeting Page CSS */
+
+
+
+
+/* Start Review Page CSS */
+
+
+/* End Review Page CSS */

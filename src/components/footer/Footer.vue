@@ -3,7 +3,7 @@
       <div class="footer-content">
         <!-- Left section -->
         <div class="footer-section">
-          <img src="" alt="Logo" class="logo" />
+          <img src="C:\Users\my pc\Pictures/image.jpg" alt="Logo" class="logo" />
           <p>Espacios de trabajo exclusivos para profesionales y empresas, diseñados para potenciar tu productividad y bienestar.</p>
           <p>Cerrada de Gruta 19, Jardines del Pedregal<br />
           Álvaro Obregón 01900<br />
