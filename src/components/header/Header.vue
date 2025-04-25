@@ -88,4 +88,9 @@ export default {
   position: fixed;
   width: 100%;
 } */
+nav.navbar .container-fluid {
+    max-width: 1280px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
 </style>

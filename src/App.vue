@@ -41,12 +41,9 @@ import Review from './components/content/Review.vue'
     
         <template v-if="$route.path === '/'">
           <Content1 msg="EXECUTIVE OFFICES." />
-          <Content2 msg="CONOCE GRUTA 19 CORP" price="$350" message1="Areas comunes" message2="Internet da alta velocidad" />
-          <Content2 price="$3,500" message1="Hora de sala de juntas 6 personas / mes" message2="Sala de juntas one to one" />
-          <Content3 msg="CONOCE NUESTRA OFERTA DE OFICINAS"/>
-          <Content3 />
-          <Meeting msg="MEETING ROOMSS"/>
-          <Meeting />
+          <Content2 msg="CONOCE GRUTA 19 CORP" price="$350" message1="Areas comunes" message2="Internet da alta velocidad" price1="$3,500" message3="Hora de sala de juntas 6 personas / mes" message4="Sala de juntas one to one" />
+          <Content3 msg="CONOCE NUESTRA OFERTA DE OFICINAS" title="Executive Offices" price="$12,500" message1="Acceso a las instalaciones de Gruta 24 7, los 365 días del año." message2="Atención personalizada a visitas" message3="Horas de Salas de Juntas." title1="Virtual Offices" price1="$6,200" message4="Recepción de 8:00 am a 8:00 pm" message5="Toma de mensajes y envío por correo" message6="Atención personalizada a visitas" />
+          <Meeting msg="MEETING ROOMS"/>
           <Event msg="AREA SOCIAL PARA EVENTOS"/>
           <Review msg="lo que dicen nuestros clientes"/>
         </template>
