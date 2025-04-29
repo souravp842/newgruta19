@@ -44,6 +44,82 @@ defineProps({
     type: [String, Number],
     required: false,
   },
+   paxvalue1: {
+    type: [String, Number],
+    required: false,
+  },
+  paxvalue2: {
+    type: [String, Number],
+    required: false,
+  },
+  paxvalue3: {
+    type: [String, Number],
+    required: false,
+  },
+  paxvalue4: {
+    type: [String, Number],
+    required: false,
+  },
+  list1: {
+    type: [String, Number],
+    required: false,
+  },
+  list2: {
+    type: [String, Number],
+    required: false,
+  },
+  list3: {
+    type: [String, Number],
+    required: false,
+  },
+  list4: {
+    type: [String, Number],
+    required: false,
+  },
+  list5: {
+    type: [String, Number],
+    required: false,
+  },
+  list6: {
+    type: [String, Number],
+    required: false,
+  },
+  list7: {
+    type: [String, Number],
+    required: false,
+  },
+  list8: {
+    type: [String, Number],
+    required: false,
+  },
+  list9: {
+    type: [String, Number],
+    required: false,
+  },
+  list10: {
+    type: [String, Number],
+    required: false,
+  },
+  list11: {
+    type: [String, Number],
+    required: false,
+  },
+  list12: {
+    type: [String, Number],
+    required: false,
+  },
+  list13: {
+    type: [String, Number],
+    required: false,
+  },
+  list14: {
+    type: [String, Number],
+    required: false,
+  },
+  list15: {
+    type: [String, Number],
+    required: false,
+  }
 })
 </script>
 
@@ -60,7 +136,7 @@ defineProps({
         <h2 class="fw-bold text-white mt-2">
          <span class="price"> {{ price1 }}</span> <span class="fs-6 text-light">MXN</span>
         </h2>
-        <p class="text-white">Por hora</p>
+        <p class="Por-hora">Por hora</p>
         <ul class="list-unstyled mt-3 mb-4">
           <li class="mb-2 d-flex">
             {{ list1 }}
@@ -89,7 +165,7 @@ defineProps({
         <h2 class="fw-bold text-white mt-2">
          <span class="price"> {{ price2 }}</span> <span class="fs-6 text-light">MXN</span>
         </h2>
-        <p class="text-white">Capacidad {{ paxvalue1 }} - por hora</p>
+        <p class="Por-hora">Capacidad <span>{{ paxvalue1 }}</span> - por hora</p>
         <ul class="list-unstyled mt-3 mb-4">
           <li class="mb-2 d-flex">
             {{ list5 }}
@@ -101,7 +177,7 @@ defineProps({
             {{ list7 }}
           </li>
           </ul>
-        <button class="btn btn-orange w-100 mb-3">
+        <button class="btn btn-orange w-100 ">
           Contratar Ahora
         </button>
         </div>
@@ -112,7 +188,7 @@ defineProps({
         <h2 class="fw-bold text-white mt-2">
          <span class="price"> {{ price3 }}</span> <span class="fs-6 text-light">MXN</span>
         </h2>
-        <p class="text-white">Capacidad {{ paxvalue2 }} - por hora</p>
+        <p class="Por-hora">Capacidad <span>{{ paxvalue2 }}</span> - por hora</p>
         <ul class="list-unstyled mt-3 mb-4">
           <li class="mb-2 d-flex">
             {{ list8 }}
@@ -124,7 +200,7 @@ defineProps({
             {{ list10 }}
           </li>
           </ul>
-        <button class="btn btn-orange w-100 mb-3">
+        <button class="btn btn-orange w-100 ">
           Contratar Ahora
         </button>
         </div>
@@ -135,7 +211,7 @@ defineProps({
         <h2 class="fw-bold text-white mt-2">
          <span class="price"> {{ price4 }}</span> <span class="fs-6 text-light">MXN</span>
         </h2>
-        <p class="text-white">Capacidad {{ paxvalue3 }} - por hora</p>
+        <p class="Por-hora">Capacidad <span>{{ paxvalue3 }}</span> - por hora</p>
         <ul class="list-unstyled mt-3 mb-4">
           <li class="mb-2 d-flex">
             {{ list11 }}
@@ -147,7 +223,7 @@ defineProps({
             {{ list13 }}
           </li>
           </ul>
-        <button class="btn btn-orange w-100 mb-3">
+        <button class="btn btn-orange w-100 ">
           Contratar Ahora
         </button>
         </div>
@@ -158,7 +234,7 @@ defineProps({
         <h2 class="fw-bold text-white mt-2">
          <span class="price"> {{ price5 }}</span> <span class="fs-6 text-light">MXN</span>
         </h2>
-        <p class="text-white">Capacidad {{ paxvalue4 }} - por hora</p>
+        <p class="Por-hora">Capacidad <span>{{ paxvalue4 }}</span> - por hora</p>
         <ul class="list-unstyled mt-3 mb-4">
           <li class="mb-2 d-flex">
             {{ list14 }}
@@ -167,7 +243,7 @@ defineProps({
             {{ list15 }}
           </li>
           </ul>
-        <button class="btn btn-orange w-100 mb-3">
+        <button class="btn btn-orange w-100 ">
           Contratar Ahora
         </button>
         </div>
@@ -209,9 +285,19 @@ defineProps({
   .an-meeting-card-wraper .card-container {
       width: 50%;
       background: #0C0C0D;
-      border-radius: 16px;
+      border-radius:8px;
       padding: 30px;
   }
+  .an-meeting-card-wraper .card-container p.Por-hora {
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    letter-spacing: 0;
+    font-family: "Voltaire", sans-serif;
+}
+.an-meeting-card-wraper .card-container p.Por-hora span {
+    color: #f57c00;
+}
   .an-meeting-card-wraper .card-container h4 {
       color: #FFFFFF;
       font-size: 24px;

@@ -42,10 +42,10 @@
   
   <style scoped>
   .footer {
-    background-color: #1d1e20;
+    background-color:#1C2023;
     color: white;
     padding: 2rem 1rem;
-    font-family: Arial, sans-serif;
+    font-family: "Voltaire", sans-serif;
   }
   
   .footer-content {
@@ -53,16 +53,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 45px;
   }
+  .footer-content .footer-section h4 {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0;
+    font-weight: 400 !important;
+}
   
   .footer-section {
-    flex: 1;
     min-width: 200px;
   }
-  
+  .footer-content .footer-section:nth-child(1) {
+    max-width: 390px;
+}
   .footer-section h4 {
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   
   .footer-section ul {
@@ -75,7 +86,7 @@
   }
   
   .footer-section ul li a {
-    color: white;
+    color: #D9E2F0;
     text-decoration: none;
   }
   
@@ -91,10 +102,21 @@
     font-size: 0.9rem;
     color: #aaa;
   }
-  
+  .footer-content .footer-section a {
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 0;
+}
   .logo {
     max-width: 150px;
     margin-bottom: 1rem;
+  }
+
+
+  @media(max-width:900px){
+    .footer-content {
+    padding: 0;
+}
   }
   </style>
   

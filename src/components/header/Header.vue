@@ -93,4 +93,16 @@ nav.navbar .container-fluid {
     padding-left: 45px;
     padding-right: 45px;
 }
+nav.navbar .container-fluid .btn{
+  border-radius: 0 !important;
+}
+nav.navbar {
+    background-color: #1C2023 !important;
+}
+@media(max-width:900px){
+  nav.navbar .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
 </style>
