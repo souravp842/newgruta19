@@ -45,8 +45,8 @@ export default {
     return {
       menuOpen: false,
       navLinks: [
-  { text: 'Espacios', to: '#/contact'},
-  { text: 'Servicios', to: '#/link2' },
+  { text: 'Espacios', to: '#/espacios'},
+  { text: 'Servicios', to: '#/servicios' },
   { text: 'Galería', to: '#/link3' },
   { text: 'Nosotros', to: '#/link4' },
   { text: 'Promociones', to: '#/link5' }
