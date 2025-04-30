@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 export default {
   props: {
     message: {
@@ -11,7 +11,23 @@ export default {
     }
   }
 }
+</script> -->
+
+
+<script setup>
+defineProps({ 
+    message:{
+        type: String,
+        required: true
+    },
+    image: {
+    type: String,
+    required: true
+  }
+});
 </script>
+
+
 <template>
 <section>
     <!-- start section 1 -->
@@ -21,9 +37,10 @@ export default {
     <div class="an-event-container">
 
         <div class="row">
-    <div class="an-event-left col-sm-1">
-      <img class="an-top-event-image" :src="image"/>
-    </div>
+            <div class="an-event-left col-sm-1">
+    <!-- Bind the image prop to the src of the img element -->
+    <img class="an-top-event-image" :src="image" alt="Event Image" />
+  </div>
     <div class="an-event-right col-sm-10 bg-secondary text-white">
         <spn class="an-event-title">Planta baja | EI punto de encuentro</spn><br>
         <span class="an-event-title">{{ message }}</span><br>

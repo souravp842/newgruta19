@@ -1,7 +1,11 @@
 <script setup>
 import { ref } from 'vue';
 import EspaciosCard from '@/components/sections/EspaciosCard.vue'
-const image1 = ref(new URL('@/assets/images/nivel.png', import.meta.url).href);
+import baja from '@/assets/images/baja.png'; 
+import nivel from '@/assets/images/nivel.png';
+import nivel2 from '@/assets/images/nivel2.png';
+import sala from '@/assets/images/sale.png';
+
 </script>
 
 <template>
@@ -26,9 +30,10 @@ const image1 = ref(new URL('@/assets/images/nivel.png', import.meta.url).href);
       >
         Ver Tour Virtual 360°
       </button>
-      <EspaciosCard message="image" image="image1"/>
-      <EspaciosCard message="image" image="image1"/>
-      <EspaciosCard message="default text" image="image1"/>
+      <EspaciosCard message="message first" :image="baja" />
+      <EspaciosCard message="default message":image="nivel"/>
+     <EspaciosCard message="message third" :image="nivel2"/>
+       <EspaciosCard message="message third" :image="sala"/>
 
 
 
