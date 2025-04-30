@@ -1,5 +1,5 @@
 <template>
-<section class="bg-black text-white text-center py-20 px-4">
+<section class="que_mereces text-white text-center py-20 px-4">
   <!-- Title with icon -->
   <div class="text-4xl md:text-5xl font-semibold uppercase tracking-wider mb-2">
     <span>Todo</span>
@@ -52,7 +52,15 @@ export default {
 }
 
 </script>
-
+<style>
+section.que_mereces {
+    padding-top: 157px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    background-color: #1c2023;
+}
+</style>
 <!-- END SERVICIOS INCLUIDOS -->
 
 

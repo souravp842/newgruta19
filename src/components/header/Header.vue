@@ -6,6 +6,9 @@
 
          <img src="@/assets/images/logo.png" alt="Logo" height="30" class="me-2" />
 
+
+
+         
       </router-link>
 
       <!-- Toggler (for mobile) -->
