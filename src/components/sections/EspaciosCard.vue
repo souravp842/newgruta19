@@ -28,11 +28,7 @@ defineProps({
   </div>
     <div class="an-event-right col-sm-10 bg-secondary text-white">
         <spn class="an-event-title">Planta baja | EI punto de encuentro</spn><br>
-        <span class="an-event-title">{{ message }}</span><br>
-        <p  class="an-event-subtitle">Descubre un espacio exclusivo diseñado para quienes buscan lo mejor.
-            Nuestro salón, con capacidad para 80 personas, combina elegancia y comodidad en un ambiente sofisticado.
-            Un lugar donde cada detalle ha sido pensado para ofrecer una experiencia inigualable, ideal para reuniones sociales de alto nivel.
-        </p>
+        <span class="an-event-title">{{ message }}</span>
 
   <div class="an-event-inner-row">
     <div class=" an-event-list-wraper">
