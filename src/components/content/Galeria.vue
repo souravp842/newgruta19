@@ -1,16 +1,18 @@
+<!-- src/views/Galery.vue -->
+<script setup>
+import GaleriaImageCard from '@/components/sections/GaleriaImageCard.vue'
+import image from '@/assets/images/img.png';
+
+</script>
 
 
 <template>
-    <h2>Galeria pages..</h2>
-    <GaleriaImageCard />
+    <div>
+      <h2>Galery Page</h2>
+      <GaleriaImageCard :image="image"/>
+      <GaleriaImageCard :image="image"/>
+      <GaleriaImageCard :image="image"/>
+    </div>
   </template>
-  
-  <!-- <script>
-import GaleriaImageCard from '@/components/sections/GaleriaImageCard.vue';
 
-export default {
-  components: {
-    GaleriaImageCard,
-  },
-};
-</script> -->
+

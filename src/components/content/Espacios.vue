@@ -32,7 +32,7 @@ import sala from '@/assets/images/sale.png';
       </button>
       <EspaciosCard message="message first" :image="baja" />
       <EspaciosCard message="default message":image="nivel"/>
-     <EspaciosCard message="message third" :image="nivel2"/>
+        <EspaciosCard message="message third" :image="nivel2"/>
        <EspaciosCard message="message third" :image="sala"/>
 
 

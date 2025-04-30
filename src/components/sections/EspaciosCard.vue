@@ -1,18 +1,3 @@
-<!-- <script>
-export default {
-  props: {
-    message: {
-      type: String,
-      required: true,  // optional, depends if you need the prop to be required
-    },
-    image: {
-      type: String,
-      required: true
-    }
-  }
-}
-</script> -->
-
 
 <script setup>
 defineProps({ 
