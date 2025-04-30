@@ -29,61 +29,25 @@
 <!-- START SERVICIOS INCLUIDOS -->
 
 <div class="t2 min-h-screen bg-gray-900 flex flex-col md:flex-row gap-4 p-6">
-    <ServiceCard
-      v-for="(item, index) in services"
-      :key="index"
-      :icon="item.icon"
-      :title="item.title"
-      :description="item.description"
-    />
-<ServiciodAdicionalesCard/>    
-
+  <center><h2>SERVICIOS INCLUIDOS</h2></center>
+    <ServiceCard/>
+    <center><h2 class="title">SERVICIOS ADICIONALES</h2></center>
+    <ServiciodAdicionalesCard /> 
+    <ServiciosPremiumCard/> 
   </div>
 
   </template>
 
 
 <script>
-  import ServiciodAdicionalesCard from '@/components/sections/ServiciodAdicionalesCard.vue'
-
+import ServiciodAdicionalesCard from '@/components/sections/ServiciodAdicionalesCard.vue'
+import ServiciosPremiumCard from '@/components/sections/ServiciosPremiumCard.vue'
  import ServiceCard from "@/components/sections/ServiciosCard.vue";
-import IconReception from '@/assets/images/logo.png'
-import IconMail from '@/assets/images/icon.png'
-
 export default {
   components: {
     ServiceCard,
-    ServiciodAdicionalesCard
-  },
-  data() {
-    return {
-      services: [
-        {
-          icon: IconReception,
-          title: 'RECEPCIÓN PROFESIONAL',
-          description: 'Personal capacitado para atender todas tus necesidades administrativas.'
-        },
-        {
-          icon: IconMail,
-          title: 'MENSAJERÍA Y PAQUETERÍA',
-          description:
-            'Servicio de recepción y envío de correspondencia y paquetes a nivel nacional e internacional. (Para Executive offices, oficina virtual y privada)'
-        },
-        {
-          icon: IconMail,
-          title: 'SALA ONE TO ONE',
-          description:
-            'Ideal para entrevistas, consultas y reunions privadas.'
-        },
-        {
-          icon: IconMail,
-          title: 'ATENCION EXCLUSIVA',
-          description:
-            'Servicos personalizado para atender todos tus necesidades empresarials'
-        }
-
-      ]
-    }
+    ServiciodAdicionalesCard,
+    ServiciosPremiumCard
   }
 }
 
@@ -94,42 +58,4 @@ export default {
 
 <!-- START SERVICIOS ADICIONALES -->
 
-
-<!-- <template> -->
-    <!-- <div class="min-h-screen bg-gray-900 p-6">
-      <div class="flex flex-col md:flex-row gap-4"> -->
-        <!-- <ServiciodAdicionalesCard/> -->
-      <!-- </div>
-    </div> -->
-  <!-- </template> -->
   
-  <!-- <script> -->
-//   import ServiciodAdicionalesCard from '@/components/sections/ServiciodAdicionalesCard.vue'
-
-//   import ServiceCard from "@/components/sections/ServiciosCard.vue";
-  
-//   export default {
-//     components: { TextCard },
-//     data() {
-//       return {
-//         cards: [
-//           {
-//             title: 'COFFEE BREAK',
-//             description: 'Servicio de catering para eventos y reuniones importantes.'
-//           },
-//           {
-//             title: 'VALET PARKING',
-//             description: 'Servicio personalizado de estacionamiento para ti y tus visitantes.'
-//           },
-//           {
-//             title: 'LOCKERS PRIVADOS',
-//             description: 'Espacio seguro para almacenar tus pertenencias personales.'
-//           }
-//         ]
-//       }
-//     }
-//   }
-  <!-- </script> -->
-
-
-<!-- END SERVICIOS ADICIONALES -->

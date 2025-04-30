@@ -1,54 +1,65 @@
-<script setup>
-import { ref } from 'vue';
-import EspaciosCard from '@/components/sections/EspaciosCard.vue'
-const image1 = ref(new URL('@/assets/images/nivel.png', import.meta.url).href);
+<script>
+export default {
+  props: {
+    message: {
+      type: String,
+      required: true,  // optional, depends if you need the prop to be required
+    },
+    image: {
+      type: String,
+      required: true
+    }
+  }
+}
 </script>
-
 <template>
-    <section class="text-white py-20 text-center" style="background-color: #1d1f20">
-      <h2 class="text-4xl md:text-5xl font-bold tracking-wide uppercase mb-6 flex justify-center items-center gap-2">
-        <span>NUESTR</span>
-        <span class="inline">
-            <!-- <img class="an-top-event-image" :src="image"/> -->
-        </span>
-        <span>S ESPACIOS<span class="text-orange-500">.</span></span>
-      </h2>
-  
-     <center> <p class="max-w-2xl mx-auto text-sm md:text-base mb-10 leading-relaxed">
-        Eleva tu productividad en un entorno moderno, cómodo y completamente equipado.<br>
-        Nuestras membresías te brindan acceso a un workspace funcional con internet de alta<br>
-        velocidad, recepción, estación de café y más beneficios que impulsan tu día a día.<br>
-        Conéctate, crea y trabaja sin límites en un espacio diseñado para el éxito.<br>
-      </p></center>
-  
-      <button
-        class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded shadow hover:bg-yellow-300 transition"
-      >
-        Ver Tour Virtual 360°
-      </button>
-      <EspaciosCard message="image" image="image1"/>
-      <EspaciosCard message="image" image="image1"/>
-      <EspaciosCard message="default text" image="image1"/>
+<section>
+    <!-- start section 1 -->
+ 
+    <div class="an-event-section">
+    <h3 class="an-event-head"></h3>
+    <div class="an-event-container">
 
+        <div class="row">
+    <div class="an-event-left col-sm-1">
+      <img class="an-top-event-image" :src="image"/>
+    </div>
+    <div class="an-event-right col-sm-10 bg-secondary text-white">
+        <spn class="an-event-title">Planta baja | EI punto de encuentro</spn><br>
+        <span class="an-event-title">{{ message }}</span><br>
+        <p  class="an-event-subtitle">Descubre un espacio exclusivo diseñado para quienes buscan lo mejor.
+            Nuestro salón, con capacidad para 80 personas, combina elegancia y comodidad en un ambiente sofisticado.
+            Un lugar donde cada detalle ha sido pensado para ofrecer una experiencia inigualable, ideal para reuniones sociales de alto nivel.
+        </p>
 
-
-    </section>
-
- <section class="bg-black text-white text-center py-20">
-  <h2 class="text-3xl md:text-4xl font-bold uppercase mb-4 tracking-wide">
-    Listo para elevar tu espacio de trabajo
-  </h2>
-  <p class="text-base md:text-lg mb-8">
-    Agenda una visita y conoce personalmente nuestras instalaciones
-  </p>
-  <button
-    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition duration-300"
-  >
-    Iniciar Tour Virtual
-  </button>
+  <div class="an-event-inner-row">
+    <div class=" an-event-list-wraper">
+    <div class="col-sm an-event-list">
+        <span> Recaption can atencion professional</span><br>
+        <span>Recaption can atencion professional</span><br>
+        <span> Recaption can atencion professional</span>
+    </div>
+    <div class="col-sm an-event-list">
+        <span>Espacios colobarativas y grados</span><br>
+        <span>Espacios colobarativas y grados</span><br>
+        <span> Espacios colobarativas y grados</span>
+    </div>
+  </div>
+    <div class="col-sm an-button-wraper">
+      <button class="btn btn-outline-orange w-100">Ver todos los servicios </button>
+      <button class="btn btn-orange w-100">Reservar Ahora</button>
+    </div>
+  </div>     
+    </div>   
+  </div>
+</div>
+</div>
 </section>
-  </template>
-  
+
+
+</template>
+
+
 
 
 
@@ -204,4 +215,3 @@ p.an-event-subtitle {
 }
 
 </style>
-  

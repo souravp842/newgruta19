@@ -47,9 +47,9 @@ export default {
       navLinks: [
   { text: 'Espacios', to: '#/espacios'},
   { text: 'Servicios', to: '#/servicios' },
-  { text: 'Galería', to: '#/link3' },
-  { text: 'Nosotros', to: '#/link4' },
-  { text: 'Promociones', to: '#/link5' }
+  { text: 'Galería', to: '#/galeria' },
+  { text: 'Nosotros', to: '#/nosotros' },
+  { text: 'Promociones', to: '#/promociones' }
 ]
     };
   },

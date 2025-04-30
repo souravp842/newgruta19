@@ -24,9 +24,9 @@ import { createRouter, createWebHashHistory  } from 'vue-router'
 // Import the components you want to use
 import Contact from './components/content/Contact.vue'
 import Servicios from './components/content/Servicios.vue'
-import Link3 from './components/content/Link3.vue'
-import Link4 from './components/content/Link4.vue'
-import Link5 from './components/content/Link5.vue'
+import Galeria from './components/content/Galeria.vue'
+import Nosotros from './components/content/Nosotros.vue'
+import Promociones from './components/content/Promociones.vue'
 import Espacios from './components/content/Espacios.vue'
 
 const routes = [
@@ -39,15 +39,15 @@ const routes = [
      component: Servicios 
     },
   { 
-    path: '/Link3', 
-    component: Link3 
+    path: '/galeria', 
+    component: Galeria
   },
   {
-    path: '/Link4', 
-    component: Link4 
+    path: '/nosotros', 
+    component: Nosotros 
   },
-  { path: '/Link5', 
-    component: Link5 
+  { path: '/promociones', 
+    component: Promociones 
   },
 ];
 
