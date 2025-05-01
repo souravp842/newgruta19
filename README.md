@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # gruta19-corp
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# newgruta19
+>>>>>>> a3d830f4f82a3e5089816b4f19a9b4c2e30c8290
