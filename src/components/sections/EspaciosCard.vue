@@ -56,20 +56,20 @@ defineProps({
     <img class="an-top-event-image" :src="image" alt="Event Image" />
   </div>
     <div class="an-event-right col-sm-10 bg-secondary text-white exclusivo_personas">
-        <spn class="an-event-title planta_baja_ei">msg1 {{ message1 }}</spn><br>
-        <span class="an-event-title exclusivo_diseñado"> msg {{ message }}</span><br>
+        <spn class="an-event-title planta_baja_ei">{{ message1 }}</spn><br>
+        <span class="an-event-title exclusivo_diseñado">{{ message }}</span><br>
 
   <div class="an-event-inner-row ">
     <div class="an-event-list-wraper an_eventlist_pro">
     <div class="col-sm an-event-list">
-        <span> {{ message2 }}</span><br>
-        <span>{{ message3 }}</span><br>
-        <span> {{ message4 }}</span>
+        <span v-if="message2"> {{ message2 }}</span><br>
+        <span v-if="message3">{{ message3 }}</span><br>
+        <span v-if="message4"> {{ message4 }}</span>
     </div>
     <div class="col-sm an-event-list">
-        <span>{{ message5 }}</span><br>
-        <span>{{ message6 }}</span><br>
-        <span> {{ message7 }}</span>
+        <span v-if="message5">{{ message5 }}</span><br>
+        <span v-if="message6">{{ message6 }}</span><br>
+        <span v-if="message7">{{ message7 }}</span>
     </div>
   </div>
     <div class="col-sm an-button-wraper ver_tour_btn">

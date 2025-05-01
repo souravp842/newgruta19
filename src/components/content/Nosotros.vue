@@ -3,9 +3,9 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
 
 </script>
 <template>
-    <div class="text-section">
+    <div class="text-section experiencia_sect">
       <h1 class="main-heading">
-        EL P<span class="orange-icon"></span>DER SE <br />
+        EL P<img src="/src/assets/images/icon.png" >DER SE <br />
         ENCUENTRA AQUÍ<span class="orange-dot">.</span>
       </h1>
       <p class="subheading">
@@ -18,24 +18,25 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
     </div>
 
 <!-- START UBACACION ESTRATEGICA SECTION -->
-<div class="location-section">
+<div class="location-section_map">
+  <div class="location-section">
+  <h2>UBICACIÓN ESTRATÉGICA</h2>
     <div class="location-content">
       <div class="text-box">
-        <h2>UBICACIÓN ESTRATÉGICA</h2>
         <div class="address-box">
           <h4>Dirección</h4>
           <p>
             Nos encontramos en una de las zonas más exclusivas de la ciudad:
           </p>
-          <p class="location-line">
-            <span class="location-icon"></span>
+          <p class="location-line"><img src="/src/components/icons/location-icon.svg" alt="">
             Cerrada de Gruta 19, Jardines del Pedregal, Álvaro Obregón 01900
           </p>
         </div>
       </div>
       <div class="map-box">
-        <img src="@/assets/images/img.png" alt="Mapa" />
+        <img src="@/assets/images/map-img.png" alt="Mapa" />
       </div>
+    </div>
     </div>
   </div>
 <!-- END UBACACION ESTRATEGICA SECTION -->
@@ -47,19 +48,20 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
   
   <style scoped>
 .text-section {
-  background-color: #1a1d1d;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-  font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1c2023;
+    color: white;
+    text-align: center;
+    padding: 157px 10px;
 }
 
 .main-heading {
-  font-size: 42px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  line-height: 1.3;
-  margin-bottom: 24px;
+    font-size: 66px;
+    line-height: 86px;
+    letter-spacing: 0;
+    font-family: "Voltaire", sans-serif;
+    max-width: 520px;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
 
 .orange-icon {
@@ -69,36 +71,31 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
   vertical-align: middle;
   margin: 0 4px;
 }
-
 .orange-dot {
-  color: #f37021;
-  font-size: 36px;
+    color: #f37021;
+    font-size: 75px;
 }
-
 .subheading {
-  font-size: 14px;
-  color: #ccc;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto;
+    font-family: Voltaire;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 25px;
 }
-
-/* Start UBACACION ESTRATEGICA SECTION css */
 
 .location-section {
-  background-color: #1a1d1d;
-  padding: 60px 20px;
-  color: white;
-  font-family: 'Helvetica Neue', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0px;
 }
-
 .location-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
-  gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px;
 }
 
 .text-box {
@@ -107,29 +104,37 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
 }
 
 .address-box {
-  background-color: #111314;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 28px;
+    border: 1px solid #55585e17;
 }
-
 .address-box h4 {
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+    margin: 0px 0px 25px 0px;
 }
 
 .address-box p {
-  font-size: 14px;
-  color: #ccc;
-  margin: 8px 0;
+    font-family: Voltaire;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #9CA3AF;
 }
 
 .location-line {
-  color: white;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-family: Official Book;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0;
+  margin: 40px 0px 0px 0px;
+  color: #fff !important;
 }
 
 .location-icon {
@@ -141,11 +146,56 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
   flex: 1;
   min-width: 300px;
 }
-
 .map-box img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 8px;
+}
+.experiencia_sect img {
+    margin: -16px 6px 0px;
+}
+.location-section h2 {
+    font-family: Voltaire;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+.location-section_map {
+    background-color: #1c2023;
+    color: #fff;
+    padding: 50px 0px;
+}
+.location-line img {
+    width: 16px;
+    height: 20px;
+}
+@media(max-width:767px) {
+  .map-box, .text-box {
+    flex: 1;
+    min-width: 100%;
+}
+/* .location-content {
+    gap: 20px;
+    flex-direction: column-reverse;
+} */
+.location-section {
+    width: 100%;
+    padding: 16px;
+}
+.grid {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    padding: 16px;
+}
+.section-title {
+    line-height: 64px;
+    margin: 0px 0px 64px 0px;
+}
+.map-box img {
+    border-radius: 0px;
+}
 }
 </style>

@@ -5,6 +5,7 @@ import baja from '@/assets/images/baja.png';
 import nivel from '@/assets/images/nivel.png';
 import nivel2 from '@/assets/images/nivel2.png';
 import sala from '@/assets/images/sale.png';
+import icon from '@/assets/images/icon.png';
 
 </script>
 
@@ -14,7 +15,7 @@ import sala from '@/assets/images/sale.png';
       <h2 class="text-4xl md:text-5xl font-bold tracking-wide uppercase mb-6 flex justify-center items-center gap-2">
         <span>NUESTR</span>
         <span class="inline">
-            <!-- <img class="an-top-event-image" :src="image"/> -->
+            <img class="an-top-event-image" :src="icon"/>
         </span>
         <span>S ESPACIOS<span class="text-orange-500">.</span></span>
       </h2>
