@@ -5,7 +5,7 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
 <template>
     <div class="text-section">
       <h1 class="main-heading">
-        EL P<span class="orange-icon">◉</span>DER SE <br />
+        EL P<span class="orange-icon"></span>DER SE <br />
         ENCUENTRA AQUÍ<span class="orange-dot">.</span>
       </h1>
       <p class="subheading">
@@ -148,6 +148,4 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
   border-radius: 8px;
   object-fit: cover;
 }
-
-
 </style>

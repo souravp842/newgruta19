@@ -52,10 +52,10 @@ export default {
 
 <style scoped>
 .servicios-wrapper {
-  background-color: #1d1f21;
-  padding: 2rem 1rem;
-  color: #fff;
-  text-align: center;
+    background-color: #1c2023;
+    padding: 2rem 1rem;
+    color: #fff;
+    text-align: center;
 }
 
 .title {
@@ -71,14 +71,16 @@ export default {
   justify-content: center;
 }
 
-.card {
-  background-color: #111;
-  display: flex;
-  align-items: flex-start;
-  padding: 1rem;
-  border-radius: 6px;
-  text-align: left;
-  color: #e0e0e0;
+.serviciod_adicionales_card .card {
+    background: #0C0C0D;
+    color: #fff;
+    text-align: left;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    border-radius: 8px;
+    display: block;
 }
 
 .line {
@@ -86,16 +88,38 @@ export default {
   background-color: #ff6a00;
   margin-right: 10px;
 }
-
 .content h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+    font-family: Voltaire;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-transform: uppercase;
 }
-
 .content p {
-  margin: 0;
-  font-size: 0.9rem;
+    font-family: Voltaire;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin: 16px 0px 0px 0px;
+}
+.serviciod_adicionales_card .content {
+    border-left: 1px solid var(--Primary, #F97316);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-left-width: 1px;
+}
+@media(max-width:767px) {
+.servicios_sections_ct h2 {
+    line-height: 62px;
+}
+.servicios-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+.serviciod_adicionales_card .card {
+    padding: 16px;
+}
 }
 </style>

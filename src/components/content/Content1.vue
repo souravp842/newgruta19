@@ -1,15 +1,12 @@
 <script setup>
 defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
   image: {
         type: String,
         required: false,
     }
 })
 const image = new URL(`@/assets/images/an-top-banner.png`, import.meta.url).href
+const icon = new URL(`@/assets/images/icon.png`, import.meta.url).href
 </script>
 
 <template>
@@ -17,8 +14,8 @@ const image = new URL(`@/assets/images/an-top-banner.png`, import.meta.url).href
     <img class="an-top-banner-image an-desktop" :src="image"/>
     <div class="an-top-banner-content-wraper">
     <div class="an-top-banner-content">
-      <h4>{{ msg }}</h4>
-    <p>Dr Lora Saalman is an Associate Senior Fellow within SIPRI's Armament and Disarmament </p>
+      <h4>EXECUTIVE<img :src="icon">FFICES.</h4>
+    <p>GRUTA 19 CORP redefine la experiencia laboral con un entorno exclusivo,disenado para lideres y visionarios. </p>
    <div class="an-top-banner-buttons">
     <button class="one">Contratar</button>
     <button class="two">Agendar visita</button>

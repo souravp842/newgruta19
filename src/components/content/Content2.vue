@@ -58,11 +58,11 @@ defineProps({
   <!-- card-1 end -->
   <!-- card-2 start -->
   <div class="card-container text-white ">
-    <h4>Day Pass</h4>
+    <h4>Monthly Pass</h4>
     <div class="price-display">
       <span class="price">{{ price1 }}</span> <span class="currency">MXN</span>
     </div>
-    <p class="por-dia">Por día</p>
+    <p class="por-dia">30 día</p>
 
     <ul class="features list-unstyled mb-4">
       <li><i class="bi bi-check-lg text-warning me-2"></i> Acceso de 8am a 8pm</li>

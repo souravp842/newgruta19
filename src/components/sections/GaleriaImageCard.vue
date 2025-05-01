@@ -33,11 +33,6 @@ defineProps({
 
 
 <style scoped>
-.servicios-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 per row */
-  gap: 20px;
-}
 
 .card {
   background: #111;
@@ -51,11 +46,17 @@ defineProps({
   height: auto;
   display: block;
 }
-
 .card-content {
-  padding: 16px;
-  text-align: center;
+    padding: 0px;
+    text-align: center;
 }
-
+.main_gallery_crd h5 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding: 32px;
+}
 </style>
   
