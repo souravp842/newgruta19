@@ -1,14 +1,43 @@
 
 <script setup>
 defineProps({ 
+    image: {
+    type: String,
+    required: true
+  },
     message:{
         type: String,
         required: true
     },
-    image: {
-    type: String,
-    required: true
-  }
+    message1:{
+        type: String,
+        required: true
+    },
+    message2:{
+        type: String,
+        required: true
+    },
+    message3:{
+        type: String,
+        required: true
+    },
+    message4:{
+        type: String,
+        required: true
+    },
+    message5:{
+        type: String,
+        required: true
+    },
+    message6:{
+        type: String,
+        required: true
+    },
+    message7:{
+        type: String,
+        required: true
+    },
+   
 });
 </script>
 
@@ -27,20 +56,20 @@ defineProps({
     <img class="an-top-event-image" :src="image" alt="Event Image" />
   </div>
     <div class="an-event-right col-sm-10 bg-secondary text-white exclusivo_personas">
-        <spn class="an-event-title planta_baja_ei">Planta baja | EI punto de encuentro</spn><br>
-        <span class="an-event-title exclusivo_diseñado">{{ message }}</span><br>
+        <spn class="an-event-title planta_baja_ei">msg1 {{ message1 }}</spn><br>
+        <span class="an-event-title exclusivo_diseñado"> msg {{ message }}</span><br>
 
   <div class="an-event-inner-row ">
     <div class="an-event-list-wraper an_eventlist_pro">
     <div class="col-sm an-event-list">
-        <span> Recaption can atencion professional</span><br>
-        <span>Recaption can atencion professional</span><br>
-        <span> Recaption can atencion professional</span>
+        <span> {{ message2 }}</span><br>
+        <span>{{ message3 }}</span><br>
+        <span> {{ message4 }}</span>
     </div>
     <div class="col-sm an-event-list">
-        <span>Espacios colobarativas y grados</span><br>
-        <span>Espacios colobarativas y grados</span><br>
-        <span> Espacios colobarativas y grados</span>
+        <span>{{ message5 }}</span><br>
+        <span>{{ message6 }}</span><br>
+        <span> {{ message7 }}</span>
     </div>
   </div>
     <div class="col-sm an-button-wraper ver_tour_btn">

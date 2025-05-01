@@ -32,12 +32,49 @@ import sala from '@/assets/images/sale.png';
         Ver Tour Virtual 360°
       </button>
     </div>
-    <EspaciosCard message="Donode la creativided y la colaboracion toman forma" :image="baja" />
-    <EspaciosCard message="default message":image="nivel"/>
-    <EspaciosCard message="message first" :image="baja" />
-    <EspaciosCard message="default message":image="nivel"/>
-    <EspaciosCard message="message third" :image="nivel2"/>
-    <EspaciosCard message="message third" :image="sala"/>
+    <EspaciosCard 
+    :image="baja" 
+    message="Donode la creativided y la colaboracion toman forma"
+    message1="Planta baja | El punto de encuentro"
+    message2="Recepción con atención profesional"
+    message3="Cafetería Premium gourmet"
+    message4="37 estaciones de coworking"
+    message5="Espacios colaborativos y gradas"
+    message6="Sala de terapia privada"
+    message7="Sanitarios de lujo"
+     />
+    <EspaciosCard
+    :image="nivel"
+    message="Donde las ideas se transforman en resultados "
+    message1=" Primer nivel | El corazón productivo"
+    message2="15 oficinas privadas de lujo"
+    message3="16 estaciones de coworking"
+    message4="2 salas de juntas (6 y 12 personas)"
+    message5="Barra de trabajo colaborativa"
+    message6="Espacios One to One"
+    message7="Áreas de impresión"
+    />
+    <EspaciosCard 
+    :image="nivel2"
+    message="Donde el liderazgo encuentra su espacio" 
+    message1="Segundo nivel | El nivel ejecutivo"
+    message2="12 oficinas privadas exclusivas"
+    message3="Cabinas telefónicas privadas"
+    
+    />
+
+    <EspaciosCard 
+    :image="sala"
+    message="Sala VIP | Experiencia Premium" 
+    message1="Donde la exclusividad y el poder se encuentran"
+    message2="Bar privado exclusivo"
+    message3="Sala de estar ejecutiva"
+    message4="Mesa de billar convertible"
+    message5="Oficina ejecutiva VIP"
+    message6="Sala de juntas privada"
+    message7="Estación de café privada"
+    
+    />
 
     </section>
 

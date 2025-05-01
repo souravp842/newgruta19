@@ -1,17 +1,30 @@
+<script setup>
+import promocionesCard from '@/components/sections/promocionesCard.vue'
+
+</script>
+
 <template>
         <div class="text-section">
       <h1 class="main-heading">
-        EL P<span class="orange-icon">◉</span>DER SE <br />
-        ENCUENTRA AQUÍ<span class="orange-dot">.</span>
+        PROMOCI<span class="orange-icon"><img src="@/assets/images/icon.png"></span>NES <br />
+        ACTUALES<span class="orange-dot">.</span>
       </h1>
       <p class="subheading">
-        GRUTA 19 CORP redefine la experiencia laboral con un entorno <br />
-        exclusivo, diseñado para líderes y visionarios. <br />
-        Más que una oficina, es un espacio premium donde la estrategia y <br />
-        la innovación toman forma en un ambiente de lujo discreto, <br />
-        diseño minimalista y servicios de alta gama.
+        Pregunta por nuestras  EXCUTIVE OFFICES! Desde 12,500 MXN + <br>iva al mes.
       </p>
     </div>
+    <div class="flex flex-col md:flex-row gap-6 bg-[#1a1a1a] p-6 rounded-lg">
+    <promocionesCard
+      title="3 Meses Sin Costo"
+      description="Contrata un año de oficina privada y obtén 3 meses adicionales sin costo."
+      validUntil="31 Mar 2025"
+    />
+    <promocionesCard
+      title="3 Meses Sin Costo"
+      description="20% de descuento en membresías nuevas pagando por adelantado."
+      validUntil="15 Feb 2025"
+    />
+  </div>
 </template>
 
 

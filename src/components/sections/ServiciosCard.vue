@@ -5,6 +5,7 @@
         <div class="card-content">
           <div class="icon">
             <img :src="item.icon" alt="icon" />
+            <!-- <component :is="item.icon" /> -->
           </div>
           <div class="text">
             <h3>{{ item.title }}</h3>
@@ -20,6 +21,7 @@
 <script>
 import icon from '@/assets/images/icon.png';
 import icon1 from '@/assets/images/message.png';
+import test from '@/components/icons/test.vue';
 
 export default {
   name: 'ServiciosAdicionales',
@@ -29,7 +31,7 @@ export default {
         {
           title: 'RECEPCION PROFESIONAL',
           descripcion: 'Personal capacitado para atender todas tus necesidades adminstratives',
-          icon: icon
+          icon:  test
         },
         {
           title: 'MENSAJERÍA Y PAQUETERÍA',
