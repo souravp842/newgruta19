@@ -26,15 +26,9 @@ defineProps({
     <!-- Bind the image prop to the src of the img element -->
     <img class="an-top-event-image" :src="image" alt="Event Image" />
   </div>
-<<<<<<< HEAD
-    <div class="an-event-right col-sm-10 bg-secondary text-white">
-        <spn class="an-event-title">Planta baja | EI punto de encuentro</spn><br>
-        <span class="an-event-title">{{ message }}</span>
-=======
     <div class="an-event-right col-sm-10 bg-secondary text-white exclusivo_personas">
         <spn class="an-event-title planta_baja_ei">Planta baja | EI punto de encuentro</spn><br>
         <span class="an-event-title exclusivo_diseñado">{{ message }}</span><br>
->>>>>>> 11d98d5a3ae9886b12f419bbad013884da8a3e71
 
   <div class="an-event-inner-row ">
     <div class="an-event-list-wraper an_eventlist_pro">
@@ -65,10 +59,6 @@ defineProps({
 
 
 </template>
-
-
-
-
 
 <style scoped>
 @import '@/assets/main.css';

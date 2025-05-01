@@ -8,8 +8,7 @@
     </span>
     <span>Lo</span>
   </div>
-
-  <div class="text-4xl md:text-5xl font-semibold uppercase tracking-wider mb-4">
+  <div class="que_mereces text-4xl md:text-5xl font-semibold uppercase tracking-wider mb-4">
     Que <span class="text-white">Mereces</span><span class="text-orange-500">.</span>
   </div>
 

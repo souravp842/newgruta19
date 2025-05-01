@@ -31,18 +31,13 @@ import sala from '@/assets/images/sale.png';
       >
         Ver Tour Virtual 360°
       </button>
-<<<<<<< HEAD
-        <EspaciosCard message="Donode la creativided y la colaboracion toman forma" :image="baja" />
-        <EspaciosCard message="default message":image="nivel"/>
-=======
     </div>
-      <EspaciosCard message="message first" :image="baja" />
-      <EspaciosCard message="default message":image="nivel"/>
->>>>>>> 11d98d5a3ae9886b12f419bbad013884da8a3e71
-        <EspaciosCard message="message third" :image="nivel2"/>
-       <EspaciosCard message="message third" :image="sala"/>
-
-
+    <EspaciosCard message="Donode la creativided y la colaboracion toman forma" :image="baja" />
+    <EspaciosCard message="default message":image="nivel"/>
+    <EspaciosCard message="message first" :image="baja" />
+    <EspaciosCard message="default message":image="nivel"/>
+    <EspaciosCard message="message third" :image="nivel2"/>
+    <EspaciosCard message="message third" :image="sala"/>
 
     </section>
 
