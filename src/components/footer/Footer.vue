@@ -22,7 +22,7 @@
         </div>
   
         <!-- Right section -->
-        <div class="footer-section">
+        <div class="footer-section menu_last">
           <h4>Horarios</h4>
           <p>Acceso y Recepción:<br />
           Lunes a Viernes<br />
@@ -59,12 +59,19 @@
   }
   .footer-content .footer-section h4 {
     color: #ffffff;
+    font-weight: 400 !important;
+    font-family: Official Book;
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0;
-    font-weight: 400 !important;
 }
-  
+.menu_last p {
+    font-size: 20px;
+    font-family: Official Book;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0;
+}
   .footer-section {
     min-width: 200px;
   }
@@ -95,16 +102,22 @@
   }
   
   .footer-bottom {
-    text-align: center;
     margin-top: 2rem;
     border-top: 1px solid #444;
     padding-top: 1rem;
-    font-size: 0.9rem;
     color: #aaa;
-  }
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+}
   .footer-content .footer-section a {
     font-size: 20px;
-    line-height: normal;
+    letter-spacing: 0;
+    font-family: Official Book;
+    font-weight: 400;
+    line-height: 16px;
     letter-spacing: 0;
 }
   .logo {

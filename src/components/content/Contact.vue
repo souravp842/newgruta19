@@ -67,7 +67,7 @@ defineProps({
 <style scoped>
 .an-contact-container {
     background: #1C2023;
-    padding: 50px 0;
+    padding: 72px 0;
 }
 .an-contact-wraper {
     max-width: 1280px;
@@ -95,7 +95,7 @@ form.an-contact-form {
     letter-spacing: 0;
 }
 .an-contact-info p {
-    margin: 30px 0;
+    margin: 32px 0;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0;
@@ -106,14 +106,13 @@ form.an-contact-form {
     padding: 0;
     list-style: none;
 }
-.an-contact-info  ul li {
-    margin-bottom: 20px;
+.an-contact-info ul li {
+    margin-bottom: 16px;
     color: #D9E2F0;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0;
     display: inline-flex;
-    align-items: center;
     width: 100%;
     gap: 10px;
     font-family: "Voltaire", sans-serif;
@@ -127,11 +126,12 @@ form.an-contact-form label {
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0;
     color: #FFFFFF;
-    font-family: "Voltaire", sans-serif;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0;
 }
 form.an-contact-form label input,form.an-contact-form label textarea {
     width: 100%;
@@ -150,13 +150,18 @@ form.an-contact-form button {
     background: #F97316;
     border: none;
     outline: none;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0;
     color: #FFFFFF;
-    font-family: "Voltaire", sans-serif;
-    padding: 13px;
+    padding: 13px 30px 10px;
     border-radius: 8px;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media(max-width:900px){

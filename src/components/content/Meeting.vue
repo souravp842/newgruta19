@@ -258,10 +258,10 @@ defineProps({
 @import '@/assets/main.css';
 
 
-  .an-meeting-section {
-      background: #1C2023;
-      padding:30px 0;
-  }
+.an-meeting-section {
+    background: #1C2023;
+    padding: 30px 0 80px;
+}
   .an-meeting-wraper {
       max-width:100%;
       margin: 0 auto;
@@ -276,18 +276,19 @@ defineProps({
       font-family: "Voltaire", sans-serif;
   }
   .an-meeting-card-wraper {
-      margin-top:40px;
-      display: flex;
-      gap:24px;
-      align-items: stretch;
-      justify-content: flex-start;
-  }
+    margin-top: 72px;
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: flex-start;
+}
   .an-meeting-card-wraper .card-container {
-      width: 50%;
-      background: #0C0C0D;
-      border-radius:8px;
-      padding: 30px;
-  }
+    width: 50%;
+    background: #0C0C0D;
+    border-radius: 8px;
+    padding: 30px;
+    height: fit-content;
+}
   .an-meeting-card-wraper .card-container p.Por-hora {
     font-size: 20px;
     line-height: 20px;
@@ -363,6 +364,14 @@ defineProps({
       line-height: 18px;
       padding: 15px;
   }
+  span.fs-6.text-light {
+    font-family: Voltaire;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
   /* responsive */
   @media(max-width:850px){
     .an-meeting-section {

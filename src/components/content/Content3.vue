@@ -94,10 +94,9 @@ defineProps({
 <style scoped>
 @import '@/assets/main.css';
 
-
 .an-offices-section {
     background: #1C2023;
-    padding:30px 0;
+    padding: 30px 0 80px;
 }
 .an-offices-wraper {
     max-width: 1280px;
@@ -106,14 +105,16 @@ defineProps({
 }
 .an-offices-wraper h5 {
     color: #ffffff;
-    text-align: center;
+    letter-spacing: 0;
+    font-family: Voltaire;
+    font-weight: 400;
     font-size: 50px;
     line-height: 100%;
-    letter-spacing: 0;
-    font-family: "Voltaire", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
 }
 .an-offices-card-wraper {
-    margin-top:40px;
+    margin-top: 35px;
     display: flex;
     gap: 48px;
     align-items: stretch;
@@ -151,16 +152,18 @@ defineProps({
 }
 .an-offices-card-wraper .card-container p.por-dia {
     color: #FFFFFFCC;
+    font-family: Official Book;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 16px;
     letter-spacing: 0;
-    font-family: "Voltaire", sans-serif;
+    padding-top: 5px;
 }
 .an-offices-card-wraper .card-container ul.features {
-    margin: 30px 0 !important;
+    margin: 32px 0 !important;
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap:16px;
 }
 .an-offices-card-wraper .card-container ul.features li {
     position: relative;
@@ -186,14 +189,18 @@ defineProps({
 }
 .an-offices-card-wraper .card-container .btn {
     border-radius: 0;
-    font-size: 18px;
-    line-height: 18px;
     padding: 15px;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
 }
 /* responsive */
 @media(max-width:850px){
   .an-offices-section {
-    padding: 30px 0;
+    padding: 40px 0 64px;
 }
   .an-offices-card-wraper {
     flex-direction: column;
@@ -205,6 +212,9 @@ defineProps({
 .an-offices-card-wraper .card-container {
     width: 100%;
     padding: 34px 16px;
+}
+.an-offices-wraper h5 {
+    line-height: 64px;
 }
 }
 

@@ -85,7 +85,7 @@ const image = new URL(`@/assets/images/baja.png`, import.meta.url).href
 @import '@/assets/main.css';
 .an-event-section {
     background: #1C2023;
-    padding: 50px 0;
+    padding: 72px 0;
 }
 .an-event-section h3.an-event-head {
     color: #ffffff;
@@ -96,7 +96,7 @@ const image = new URL(`@/assets/images/baja.png`, import.meta.url).href
     font-family: "Voltaire", sans-serif;
 }
 .an-event-container {
-    margin: 50px auto 0 auto;
+    margin: 72px auto 0 auto;
     max-width: 1280px;
     padding: 0 45px;
 }
@@ -137,7 +137,7 @@ h3.an-event-title {
 p.an-event-subtitle {
     font-size: 20px;
     color: #D9E2F0;
-    line-height: 100%;
+    line-height: 25px;
     letter-spacing: 0;
     font-family: "Voltaire", sans-serif;
     margin-bottom: 30px;
@@ -151,11 +151,13 @@ p.an-event-subtitle {
 .an-event-list span {
     position: relative;
     padding-left: 25px;
-    font-family: "Voltaire", sans-serif;
     color: #ffffff;
-    font-size: 20px;
-    line-height: 20px;
     letter-spacing: 0;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0%;
 }
 .an-event-list span:before {
     content: "";
@@ -177,24 +179,34 @@ p.an-event-subtitle {
     height: 100%;
 }
 .col-sm.an-button-wraper {
-    margin-top: auto;
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     width: 100%;
     gap: 24px;
+    margin-top: 55px;
 }
 .an-button-wraper .btn {
     border-radius: 0 !important;
     width: max-content !important;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: normal;
-    padding: 9px 30px;
+    padding: 10px 30px;
     min-height: 43px;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
 }
-
+.btn-outline-orange {
+    border: 2px solid #f57c00;
+    color: #f57c00;
+    background: transparent;
+    font-family: Official Book;
+    font-weight: 400;
+    text-align: center;
+}
 @media(max-width:1100px){
     .an-event-container .row {
     flex-direction: column;
@@ -229,6 +241,9 @@ p.an-event-subtitle {
 }
 .an-event-container  .an-event-right {
     padding: 32px 15px;
+}
+.an-event-section h3.an-event-head{ 
+    line-height: 64px;
 }
 }
 

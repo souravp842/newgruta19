@@ -95,7 +95,7 @@ const image = new URL(`@/assets/images/baja.png`, import.meta.url).href
 <style scoped>
 .an-review-section {
     background: #1C2023;
-    padding: 50px 0;
+    padding: 72px 0;
 }
 .an-review-container {
     max-width: 1280px;
@@ -123,19 +123,21 @@ h2.an-review-head {
     padding: 33px;
     width: 100%;
 }
-.an-review-card  p {
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0;
+.an-review-card p {
     color: #D1D5DB;
-    font-family: "Voltaire", sans-serif;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin: 0;
 }
 .an-review-card-bottom {
     margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 16px;
 }
 .an-review-card-bottom-left img.an-review-image {
     height: 48px;
@@ -145,10 +147,12 @@ h2.an-review-head {
 }
 .an-review-card-bottom-right span {
     color: #ffffff;
-    font-size: 20px;
-    line-height: 20px;
     letter-spacing: 0;
-    font-family: "Voltaire", sans-serif;
+    font-family: Official Book;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0;
 }
 
 @media(max-width:1000px){
@@ -168,9 +172,11 @@ h2.an-review-head {
     flex-shrink: 0;
     scroll-snap-align: start;
     padding: 20px;
-    
+    border-radius: 8px;
 }
-
+h2.an-review-head {
+    line-height: 64px;
+}
 }
 
 

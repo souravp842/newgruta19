@@ -10,7 +10,7 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
         ACTUALES<span class="orange-dot">.</span>
       </h1>
       <p class="subheading">
-        Pregunta por nuestras  EXCUTIVE OFFICES! Desde 12,500 MXN + <br>iva al mes.
+        Pregunta por nuestras  EXCUTIVE OFFICES! Desde 12,500 MXN + iva al mes.
       </p>
     </div>
     <div class="promociones_card_sect flex flex-col md:flex-row gap-6 bg-[#1a1a1a] p-6 rounded-lg">
@@ -68,11 +68,12 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
 .subheading {
     font-family: Voltaire;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 25px;
     letter-spacing: 0;
     text-align: center;
-    margin-top: 25px;
+    width: 490px;
+    margin: 25px auto auto auto;
 }
 .promociones_card_sect {
     background-color: #1c2023;
@@ -150,7 +151,7 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
 .promociones_card_sect_main .text-sm.text-white.mb-2 {
     text-align: right;
 }
-@media(max-width:767px) {
+@media(max-width:1140px) {
   .promociones_card_sect_main[data-v-6d99d8d5] {
     width: 100%;
     flex-wrap: wrap;
@@ -162,6 +163,9 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
 button.custom_btn {
     width: 100%;
     text-align: center;
+}
+.subheading {
+    width: 100%;
 }
 }
 </style>
