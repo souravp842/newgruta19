@@ -70,22 +70,22 @@ export default {
   cursor: pointer;
 }
 .nav-link:hover {
-  color: #ffa726 !important;
+  color: #f97316 !important;
 }
 .btn-outline-warning {
-  color: #ffa726;
-  border-color: #ffa726;
+  color: #f97316;
+  border-color: #f97316;
 }
 .btn-outline-warning:hover {
-  background-color: #ffa726;
+  background-color: #f97316;
   color: white;
 }
 .btn-warning {
-  background-color: #ffa726;
+  background-color: #f97316;
   border: none;
 }
 .btn-warning:hover {
-  background-color: #fb8c00;
+  background-color: #f97316;
 }
 /* .navbar{
   position: fixed;

@@ -18,8 +18,8 @@
 
 
 <script>
-import icon from '@/assets/images/icon.png';
-import icon1 from '@/assets/images/message.png';
+import icon from '@//assets/images/icon.png';
+// import icon1 from '@//assets/images/message.png';
 import receptionicon from '@//components/icons/receptionicon.svg';
 import mail from '@//components/icons/mail.svg';
 import sala from '@//components/icons/sala.svg';
