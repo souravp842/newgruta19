@@ -152,11 +152,11 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
     text-align: right;
 }
 @media(max-width:1140px) {
-  .promociones_card_sect_main[data-v-6d99d8d5] {
+  .promociones_card_sect_main {
     width: 100%;
     flex-wrap: wrap;
 }
-.text-section[data-v-6d99d8d5] {
+.text-section{
     padding-top: 64px;
     padding-bottom: 64px;
 }

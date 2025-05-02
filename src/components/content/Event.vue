@@ -221,7 +221,7 @@ p.an-event-subtitle {
     display: inline-block;
 }
 .col-sm.an-button-wraper {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 .an-button-wraper .btn {
     width: 100% !important;
