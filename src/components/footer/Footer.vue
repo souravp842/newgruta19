@@ -5,10 +5,15 @@
         <div class="footer-section">
           <img src="@/assets/images/logo.png" alt="Logo" class="logo" />
           <p>Espacios de trabajo exclusivos para profesionales y empresas, diseñados para potenciar tu productividad y bienestar.</p>
-          <p>Cerrada de Gruta 19, Jardines del Pedregal<br />
-          Álvaro Obregón 01900<br />
-          +52 55 3224 3451<br />
-          contacto@gruta19corp.com</p>
+          <p> <a href="https://www.google.com/maps?q=Cerrada+de+Gruta+19,+Jardines+del+Pedregal,+Álvaro+Obregón+01900" style="color:#D9E2F0">
+      Cerrada de Gruta 19, Jardines del Pedregal Álvaro Obregón 01900
+    </a><br>
+         <a href="tel:+525532243451"style="color:#D9E2F0" >+52 55 3224 3451</a><br>
+          <a href="https://mail.google.com/mail/?view=cm&to=contacto@gruta19corp.com" target="_blank" style="color:#D9E2F0">
+  contacto@gruta19corp.com
+</a>
+</p>
+        
         </div>
   
         <!-- Middle section -->
@@ -64,6 +69,7 @@
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0;
+    margin-bottom: 20px;
 }
 .menu_last p {
     font-size: 20px;
@@ -92,10 +98,7 @@
     margin: 0.3rem 0;
   }
   
-  .footer-section ul li a {
-    color: #D9E2F0;
-    text-decoration: none;
-  }
+ 
   
   .footer-section ul li a:hover {
     text-decoration: underline;
@@ -104,8 +107,8 @@
   .footer-bottom {
     margin-top: 2rem;
     border-top: 1px solid #444;
-    padding-top: 1rem;
-    color: #aaa;
+    padding-top: 2rem;
+    color: #D9E2F0;
     font-family: Official Book;
     font-weight: 400;
     font-size: 20px;
@@ -115,21 +118,30 @@
   .footer-content .footer-section a {
     font-size: 20px;
     letter-spacing: 0;
-    font-family: Official Book;
+    font-family: "Voltaire", sans-serif;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0;
+}
+.footer-section p {
+    font-size: 20px;
+    font-family: 'Voltaire';
+    color: #D9E2F0;
 }
   .logo {
     max-width: 150px;
     margin-bottom: 1rem;
   }
-
+ .footer-section p a,  .footer-section ul li  a {
+    color: #D9E2F0;
+    text-decoration: none !important;
+  }
 
   @media(max-width:900px){
     .footer-content {
     padding: 0;
 }
   }
+
   </style>
   

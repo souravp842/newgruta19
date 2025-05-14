@@ -217,4 +217,10 @@ export default {
     letter-spacing: 0;
     color: #D9E2F0;
 }
+@media (max-width:767px){
+  .grid[data-v-c25fea75] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+}
 </style>

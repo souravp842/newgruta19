@@ -124,6 +124,7 @@ img.an-top-banner-image {
     left: unset;
     border-radius: 8px;
     margin-top: 72px;
+    height: 202px;
 }
 .an-top-banner-content-wraper {
     display: block;
@@ -139,8 +140,10 @@ img.an-top-banner-image {
   padding:0;
 }
 .an-top-banner-content h4 {
-    font-size:66px;
+    font-size: 66px;
     margin: 0 0 16px 0;
+    line-height: 86px;
+    padding-right: 100px;
 }
 .an-top-banner-buttons {
     max-width: 100%;

@@ -1,35 +1,75 @@
 <script setup>
-import Content2Card from './Content2Card.vue'
+import Content2CardPopup from './Content2CardPopup.vue'
 defineProps({
   msg: {
     type: String,
     required: false,
+  },
+  price: {
+    type: [String, Number],
+    required: false,
+  },
+  message1:{
+    type: [String, Number],
+    required: false
+  },
+  message2:{
+    type: [String, Number],
+    required: false
+  },
+  price1: {
+    type: [String, Number],
+    required: false,
+  },
+  message3:{
+    type: [String, Number],
+    required: false
+  },
+  message4:{
+    type: [String, Number],
+    required: false
   }
 })
 </script>
-
-
+<script>
+export default {
+  props: ['price', 'message2', 'modalContent'],
+  data() {
+    return {
+      showModal: false
+    };
+  }
+}
+</script>
 <template>
- 
-   <div class="an-pass-section">
-    <div class="an-pass-wraper">
-    <h5>{{ msg }}</h5>
-    <div class="an-pass-card-wraper">
-      <!-- card-1 start -->
-        <Content2Card price="$350" message1="Areas comunes" message2="Internet da alta velocidad" price1="$3,500" message3="Hora de sala de juntas 6 personas / mes" message4="Sala de juntas one to one" message5="Day Pass"  message6="Por días" />
-  <!-- card-1 end -->
-  <!-- card-2 start -->
- 
-    <Content2Card price="$3,500" message1="1 hora de sala de juntas 6 personas / mes" message2="Sala de juntas one to one"  message5="Monthly Pass"  message6="30 días"/>
-  <!-- card-2 end -->
-</div>
-</div>
-   </div>
+  <div class="card-container text-white">
+    <h4>Day Pass</h4>
+    <div class="price-display">
+      <span class="price">{{ price }}</span> <span class="currency">MXN</span>
+    </div>
+    <p class="por-dia">Por día</p>
+    <ul class="features list-unstyled mb-4">
+      <li><i class="bi bi-check-lg text-warning me-2"></i> Acceso de 8am a 8pm</li>
+      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message1 }}</li>
+      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message2 }}</li>
+    </ul>
+    <button class="btn btn-orange w-100 mb-3" @click="showModal = true">Reservar Ahora1</button>
+    <!-- Show Popup Button -->
+    <button class="btn btn-outline-orange w-100" >
+      Ver todos los servicios
+    </button>
+    <!-- Modal -->
+    <Content2CardPopup
+  v-if="showModal"
+  :title="'Day Pass'"
+  :content="'modalContent'"
+  :price="'$350'"
+  @close="showModal = false"
+/>
+  </div>
 </template>
-
 <style scoped>
 @import '@/assets/main.css';
-
 .an-pass-section {
     background: #1C2023;
     padding: 80px 0;
@@ -40,7 +80,7 @@ defineProps({
     padding: 0 45px;
 }
 .an-pass-wraper h5 {
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     font-size: 50px;
     line-height: 100%;
@@ -70,7 +110,7 @@ defineProps({
 }
 .an-pass-card-wraper .card-container span.price {
     font-family: "Voltaire", sans-serif;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 48px;
     font-weight: 400 !important;
     line-height: normal;
@@ -103,7 +143,7 @@ defineProps({
     position: relative;
     padding-left:17px;
     font-family: "Voltaire", sans-serif;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0;
@@ -151,7 +191,6 @@ defineProps({
     line-height: 64px;
 }
 }
-
 /* MOdel style */
 .modal-overlay {
   position: fixed;
@@ -165,7 +204,6 @@ defineProps({
   justify-content: center;
   z-index: 1000;
 }
-
 .modal-box {
   background: #111;
   color: white;
@@ -175,7 +213,6 @@ defineProps({
   max-width: 400px;
   position: relative;
 }
-
 .close-btn {
   position: absolute;
   top: 10px;
@@ -186,5 +223,4 @@ defineProps({
   color: white;
   cursor: pointer;
 }
-
 </style>

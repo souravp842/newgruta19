@@ -122,6 +122,10 @@ h2.an-review-head {
     background: #0C0C0D;
     padding: 33px;
     width: 100%;
+    height: 207px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
 }
 .an-review-card p {
     color: #D1D5DB;

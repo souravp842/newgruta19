@@ -3,14 +3,8 @@
     <div class="container-fluid">
       <!-- Logo -->
       <router-link to="/" class="navbar-brand d-flex align-items-center">
-
-         <img src="@/assets/images/logo.png" alt="Logo" height="30" class="me-2" />
-
-
-
-         
+         <img src="@/assets/images/logo.png" alt="Logo" height="30" class="me-2" @click="menuOpen = false" />
       </router-link>
-
       <!-- Toggler (for mobile) -->
       <button
         class="navbar-toggler"
@@ -19,17 +13,15 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <!-- Nav links -->
       <div class="collapse navbar-collapse" :class="{ show: menuOpen }" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item" v-for="link in navLinks" :key="link.text">
-            <a class="nav-link" :href="link.to">{{ link.text }}</a>
+            <a class="nav-link" :href="link.to" @click="menuOpen = false">{{ link.text }}</a>
           </li>
         </ul>
-        
-        <!-- Buttons --> 
-        <div class="d-flex gap-2">
+        <!-- Buttons -->
+        <div class="d-flex gap-2 btn-column">
           <button class="btn btn-outline-warning">Agendar visita</button>
           <button class="btn btn-warning">Contratar</button>
         </div>
@@ -37,8 +29,6 @@
     </div>
   </nav>
 </template>
-
-
 <script>
 // const base = import.meta.env.BASE_URL || '/vue/gruta19-corp';
 // const base = '/vue/gruta19-corp/';
@@ -63,29 +53,28 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .nav-link {
   font-weight: 500;
   cursor: pointer;
 }
 .nav-link:hover {
-  color: #f97316 !important;
+  color: #F97316 !important;
 }
 .btn-outline-warning {
-  color: #f97316;
-  border-color: #f97316;
+  color: #F97316;
+  border-color: #F97316;
 }
 .btn-outline-warning:hover {
-  background-color: #f97316;
+  background-color: #F97316;
   color: white;
 }
 .btn-warning {
-  background-color: #f97316;
+  background-color: #F97316;
   border: none;
 }
 .btn-warning:hover {
-  background-color: #f97316;
+  background-color: #F97316;
 }
 /* .navbar{
   position: fixed;
@@ -107,5 +96,19 @@ nav.navbar {
     padding-left: 15px;
     padding-right: 15px;
 }
+.btn-column{
+  flex-direction: column;
+}
 }
 </style>
+
+
+
+
+
+
+
+
+
+
+

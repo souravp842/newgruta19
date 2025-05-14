@@ -1,99 +1,29 @@
 <script setup>
+import Content3Card from './Content3Card.vue'
 defineProps({
   msg: {
     type: String,
     required: true,
   },
-  title: {
-    type: String,
-    required: true,
-  },
-  price: {
-    type: [String, Number],
-    required: false,
-  },
-  message1:{
-    type: [String, Number],
-    required: false
-  },
-  message2:{
-    type: [String, Number],
-    required: false
-  },
-  message3:{
-    type: [String, Number],
-    required: false
-  },
-  title1: {
-    type: String,
-    required: true,
-  },
-  price1: {
-    type: [String, Number],
-    required: false,
-  },
-  message4:{
-    type: [String, Number],
-    required: false
-  },
-  message5:{
-    type: [String, Number],
-    required: false
-  },
-  message6:{
-    type: [String, Number],
-    required: false
-  }
 })
 </script>
-
 <template>
   <div class="an-offices-section">
     <div class="an-offices-wraper">
     <h5>{{ msg }}</h5>
     <div class="an-offices-card-wraper">
       <!-- card-1 start -->
-    <div class="card-container text-white">
-    <h4>{{ title }}</h4>
-    <p class="por-dia">Desde</p>
-    <div class="price-display ">
-      <span class="price">{{ price }}</span> <span class="currency">MXN</span>
-    </div>
-   
-
-    <ul class="features list-unstyled mb-4">
-      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message1 }}</li>
-      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message2 }}</li>
-      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message3 }}</li>
-    </ul>
-    <button class="btn btn-orange w-100 mb-3">Reservar Ahora</button>
-    <button class="btn btn-outline-orange w-100">Ver todos los servicios</button>
-  </div>
-  <!-- card-1 end -->
-  <!-- card-2 start -->
-  <div class="card-container text-white">
-    <h4>{{ title1 }}</h4>
-    <div class="price-display ">
-      <span class="price">{{ price1 }}</span> <span class="currency">MXN</span>
-    </div>
-    <p class="por-dia">30 días</p>
-    <ul class="features list-unstyled mb-4">
-      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message4 }}</li>
-      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message5 }}</li>
-      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message6 }}</li>
-    </ul>
-    <button class="btn btn-orange w-100 mb-3">Reservar Ahora</button>
-    <button class="btn btn-outline-orange w-100">Ver todos los servicios</button>
-  </div>
-  <!-- card-2 end -->
+      <Content3Card title="Executive Offices" price="$12,500" message1="Acceso a las instalaciones de Gruta 24 7, los 365 días del año." message2="Atención personalizada a visitas" message3="Horas de Salas de Juntas."/>
+      <!-- card-1 end -->
+      <!-- card-2 start -->
+      <Content3Card title="Virtual Offices" price="$6,200" message1="Recepción de 8:00 am a 8:00 pm" message2="Toma de mensajes y envío por correo" message3="Atención personalizada a visitas"/>
+      <!-- card-2 end -->
 </div>
 </div>
 </div>
 </template>
-
 <style scoped>
 @import '@/assets/main.css';
-
 .an-offices-section {
     background: #1C2023;
     padding: 30px 0 80px;
@@ -104,7 +34,7 @@ defineProps({
     padding: 0 45px;
 }
 .an-offices-wraper h5 {
-    color: #ffffff;
+    color: #FFFFFF;
     letter-spacing: 0;
     font-family: Voltaire;
     font-weight: 400;
@@ -136,7 +66,7 @@ defineProps({
 }
 .an-offices-card-wraper .card-container span.price {
     font-family: "Voltaire", sans-serif;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 48px;
     font-weight: 400 !important;
     line-height: normal;
@@ -169,7 +99,7 @@ defineProps({
     position: relative;
     padding-left:17px;
     font-family: "Voltaire", sans-serif;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0;
@@ -217,6 +147,4 @@ defineProps({
     line-height: 64px;
 }
 }
-
-
 </style>

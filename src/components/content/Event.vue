@@ -153,7 +153,7 @@ p.an-event-subtitle {
     padding-left: 25px;
     color: #ffffff;
     letter-spacing: 0;
-    font-family: Official Book;
+    font-family: 'Voltaire',sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 16px;

@@ -241,5 +241,6 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
 .map-box img {
     border-radius: 0px;
 }
+
 }
 </style>
