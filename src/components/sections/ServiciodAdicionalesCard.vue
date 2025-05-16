@@ -32,16 +32,16 @@ export default {
           descripcion: 'Espacio seguro para almacenar tus pertenencias personales.',
         },
         {
-          titulo: 'LINEA TELEFONICA',
-          descripcion: 'Servicio de catering para eventos y reuniones importantes.',
+          titulo: 'Línea Telefónica Dedicada',
+          descripcion: 'Número exclusivo y servicio de recepción de llamadas.',
         },
         {
-          titulo: 'VALET PARKING',
-          descripcion: 'Servicio personalizado de estacionamiento para ti y tus visitantes.',
+          titulo: 'Domicilio Fiscal',
+          descripcion: 'Dirección comercial prestigiosa para tu empresa.',
         },
         {
-          titulo: 'LOCKERS PRIVADOS',
-          descripcion: 'Espacio seguro para almacenar tus pertenencias personales.',
+          titulo: 'Sala VIP',
+          descripcion: 'Renta nuestra exclusiva sala VIP por 3,500 MXN + IVA por hora',
         },
        
       ],
@@ -103,6 +103,7 @@ export default {
     line-height: 30px;
     letter-spacing: 0;
     margin: 16px 0px 0px 0px;
+    color:#D9E2F0;
 }
 .serviciod_adicionales_card .content {
     border-left: 1px solid var(--Primary, #F97316);

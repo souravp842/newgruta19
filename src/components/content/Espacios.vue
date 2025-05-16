@@ -66,8 +66,8 @@ import icon from '@/assets/images/icon.png';
 
     <EspaciosCard 
     :image="sala"
-    message="Sala VIP | Experiencia Premium" 
-    message1="Donde la exclusividad y el poder se encuentran"
+    message1="Sala VIP | Experiencia Premium" 
+    message="Donde la exclusividad y el poder se encuentran"
     message2="Bar privado exclusivo"
     message3="Sala de estar ejecutiva"
     message4="Mesa de billar convertible"
@@ -119,9 +119,11 @@ import icon from '@/assets/images/icon.png';
 .an-event-container .row {
     display: flex;
     align-items: stretch;
-    gap: 0;
+    gap: 26;
     width:100%;
     flex-wrap: nowrap;
+    background: #0c0c0d;
+    border-radius:10px;
 }
 .an-event-container  .an-event-left {
     width: 100%;
@@ -149,6 +151,9 @@ h3.an-event-title {
     font-size: 24px;
     font-family: "Voltaire", sans-serif;
     line-height: 24px;
+}
+span.text-orange-500 {
+    color: #f97316 !important;
 }
 p.an-event-subtitle {
     font-size: 20px;
@@ -222,7 +227,7 @@ p.an-event-subtitle {
 .membresías {
     padding-top: 157px;
     padding-right: 10px;
-    padding-bottom: 120px;
+    padding-bottom: 157px;
     padding-left: 10px;
 }
 .eleva_entorno p {
@@ -233,6 +238,7 @@ p.an-event-subtitle {
     letter-spacing: 0;
     text-align: center;
     margin: 25px 0px;
+    color:#D9E2F0;
 }
 .espacios_main button {
     background: #F97316;
@@ -269,6 +275,7 @@ section.listo_para_elevar p {
     letter-spacing: 0;
     text-align: center;
     padding-bottom: 50px;
+    color:#D9E2F0;
 }
 section.listo_para_elevar button {
     padding-right: 30px;

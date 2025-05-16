@@ -7,13 +7,13 @@ import image from '@/assets/images/img.png';
 
 
 <template>
-
+<div class="main_hero_section">
   <div class="hero-section">
     <div class="overlay">
       <button class="virtual-tour-btn">Ver Tour Virtual 360°</button>
     </div>
   </div>
-
+  </div>
 
     <div class="main_gallery_sect">
       <div class="main_gallery_crd">
@@ -28,6 +28,7 @@ import image from '@/assets/images/img.png';
   </template>
 
 <style scoped>
+
 .hero-section {
     position: relative;
     background-image: url('@/assets/images/banner.png');
@@ -43,7 +44,7 @@ import image from '@/assets/images/img.png';
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-bottom: 52px;
+    padding-bottom:72px;
 }
 .virtual-tour-btn {
     border-radius: 0;
@@ -61,7 +62,7 @@ import image from '@/assets/images/img.png';
 .main_gallery_crd {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap:32px;
     width: 1200px;
     margin: 0 auto;
     max-width: 1280px;
@@ -95,10 +96,25 @@ import image from '@/assets/images/img.png';
     width: 100%;
     background-repeat: no-repeat;
     background-position: top;
+    border-radius:10px;
 }
 .main_gallery_sect {
     padding: 230px 10px 72px;
     background: #1C2023;
+}
+}
+@media(max-width:767px){
+.main_hero_section {
+    padding-top: 70px;
+    background: #1c2023;
+}
+.overlay {
+    height: 204px;
+    width: 100%;
+    background: linear-gradient(99deg, rgb(28 32 35) 0%, rgb(28 32 35 / 99%) 28%, rgb(255 255 255 / 0%) 100%);
+    top: -3px;
+    position: absolute;
+            z-index: 2;
 }
 }
 </style>  

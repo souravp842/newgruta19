@@ -1,7 +1,7 @@
 <template>
-  <div class="promociones_cards bg-black border border-orange-500 rounded-lg p-6 w-full max-w-md">
+  <div class="promociones_cards  border border-orange-500 rounded-lg p-6 w-full max-w-md">
     <div class="text-sm text-white mb-2">
-      <span class="bg-orange-700 text-white px-3 py-1 rounded-full text-xs font-semibold">
+      <span class="bg-orange-700 date_bg text-white px-3 py-1 rounded-full text-xs font-semibold">
         Válido hasta: {{ validUntil }}
       </span>
     </div>
@@ -42,5 +42,21 @@ button.custom_btn {
 }
 .ver_btn {
   text-align: right;
+}
+span.bg-orange-700.date_bg {
+    background: #F9731699;
+    border-radius: 50px;
+    font-family: 'Official Book';
+}
+.text-sm.text-white.mb-2 {
+    text-align: right;
+}
+.promociones_card_sect_main p {
+    font-size: 20px;
+    font-family: 'Voltaire';
+    color: #D9E2F0;
+}
+.promociones_cards {
+    background: #0C0C0D !important;
 }
 </style>

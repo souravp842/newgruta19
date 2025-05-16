@@ -11,12 +11,12 @@ defineProps({
   <div class="an-offices-section">
     <div class="an-offices-wraper">
     <h5>{{ msg }}</h5>
-    <div class="an-offices-card-wraper">
+    <div class="an-offices-card-wraper an-pass-card-wraper">
       <!-- card-1 start -->
-      <Content3Card title="Executive Offices" price="$12,500" message1="Acceso a las instalaciones de Gruta 24 7, los 365 días del año." message2="Atención personalizada a visitas" message3="Horas de Salas de Juntas."/>
+      <Content3Card title="Executive Offices" price="$12,500" message1="Acceso a las instalaciones de Gruta 24 7, los 365 días del año." message2="Atención personalizada a visitas" message3="Horas de Salas de Juntas." message5="Desde"/>
       <!-- card-1 end -->
       <!-- card-2 start -->
-      <Content3Card title="Virtual Offices" price="$6,200" message1="Recepción de 8:00 am a 8:00 pm" message2="Toma de mensajes y envío por correo" message3="Atención personalizada a visitas"/>
+      <Content3Card title="Virtual Offices" price="$6,200" message1="Recepción de 8:00 am a 8:00 pm" message2="Toma de mensajes y envío por correo" message3="Atención personalizada a visitas" message4="30 días"/>
       <!-- card-2 end -->
 </div>
 </div>

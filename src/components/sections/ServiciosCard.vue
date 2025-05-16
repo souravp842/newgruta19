@@ -193,7 +193,7 @@ export default {
     line-height: 30PX;
     letter-spacing: 0;
     margin: 16px 0px 0px 0px;
-    width: 469.5px;
+    color:#D9E2F0;
 }
 .servicios_sections_ct .text {
     border-left: 1px solid var(--Primary, #F97316);

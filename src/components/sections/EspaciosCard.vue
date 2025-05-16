@@ -104,17 +104,19 @@ defineProps({
     font-family: "Voltaire", sans-serif;
 }
 .an-event-container {
-    margin: 50px auto 0 auto;
+    margin: 32px auto 0 auto;
     max-width: 1280px;
     padding: 0 45px;
 }
 .an-event-container .row {
     display: flex;
     align-items: stretch;
-    gap: 0;
-    width:100%;
+    gap: 26px;
+    width: 100%;
     flex-wrap: nowrap;
+    background: #0c0c0d;
 }
+
 .an-event-container .an-event-left {
     width: 100%;
     max-width: 440px;
@@ -161,7 +163,7 @@ p.an-event-subtitle {
     position: relative;
     padding-left: 25px;
     font-family: "Voltaire", sans-serif;
-    color: #ffffff;
+    color: #D9E2F0;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0;
@@ -219,6 +221,7 @@ p.an-event-subtitle {
     letter-spacing: 0;
     text-align: left;
     padding: 10px 0px 15px;
+    color:#D9E2F0;
 }
 .an_eventlist_pro span {
     font-family: Official Book !important;

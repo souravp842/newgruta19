@@ -137,7 +137,7 @@ h3.an-event-title {
 p.an-event-subtitle {
     font-size: 20px;
     color: #D9E2F0;
-    line-height: 25px;
+    line-height: 26px;
     letter-spacing: 0;
     font-family: "Voltaire", sans-serif;
     margin-bottom: 30px;
@@ -151,12 +151,12 @@ p.an-event-subtitle {
 .an-event-list span {
     position: relative;
     padding-left: 25px;
-    color: #ffffff;
+    color:#D9E2F0;
     letter-spacing: 0;
     font-family: 'Voltaire',sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 16px;
+    line-height: 28px;
     letter-spacing: 0%;
 }
 .an-event-list span:before {
@@ -190,7 +190,7 @@ p.an-event-subtitle {
 .an-button-wraper .btn {
     border-radius: 0 !important;
     width: max-content !important;
-    padding: 10px 30px;
+    padding: 0px 30px;
     min-height: 43px;
     font-family: Official Book;
     font-weight: 400;
@@ -211,6 +211,9 @@ p.an-event-subtitle {
     .an-event-container .row {
     flex-direction: column;
     margin: 0 auto;
+}
+.an-event-list-wraper {
+    margin-bottom: 15px;
 }
 .an-event-list-wraper {
     flex-direction: column;

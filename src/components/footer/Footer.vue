@@ -95,7 +95,7 @@
   }
   
   .footer-section ul li {
-    margin: 0.3rem 0;
+    margin: 0.5rem 0;
   }
   
  
@@ -127,6 +127,7 @@
     font-size: 20px;
     font-family: 'Voltaire';
     color: #D9E2F0;
+    line-height:1.5;
 }
   .logo {
     max-width: 150px;
@@ -140,6 +141,12 @@
   @media(max-width:900px){
     .footer-content {
     padding: 0;
+}
+.footer {
+    padding: 2rem 1.6rem; 
+}
+.footer-content .footer-section h4{
+    margin-bottom: 10px;
 }
   }
 

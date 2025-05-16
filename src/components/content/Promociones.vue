@@ -74,6 +74,7 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
     text-align: center;
     width: 490px;
     margin: 25px auto auto auto;
+    color: #D9E2F0;
 }
 .promociones_card_sect {
     background-color: #1c2023;
@@ -83,7 +84,7 @@ import promocionesCard from '@/components/sections/promocionesCard.vue'
     padding-left: 10px;
 }
 .promociones_card_sect_main {
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
     max-width: 1280px;
     padding: 0px;
@@ -166,6 +167,10 @@ button.custom_btn {
 }
 .subheading {
     width: 100%;
+}
+.promociones_card_sect {
+    padding-bottom: 72px !important;
+    padding-left: 10px;
 }
 }
 </style>

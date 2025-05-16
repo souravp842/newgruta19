@@ -263,7 +263,7 @@ defineProps({
     padding: 30px 0 80px;
 }
   .an-meeting-wraper {
-      max-width:100%;
+      max-width:1600px;
       margin: 0 auto;
       padding: 0 45px;
   }
@@ -295,6 +295,7 @@ defineProps({
     color: #ffffff;
     letter-spacing: 0;
     font-family: "Voltaire", sans-serif;
+    margin-top:10px;
 }
 .an-meeting-card-wraper .card-container p.Por-hora span {
     color: #f57c00;
@@ -334,13 +335,13 @@ defineProps({
       margin: 30px 0 !important;
       display: flex;
       flex-direction: column;
-      gap:15px;
+      gap:0px;
   }
   .an-meeting-card-wraper .card-container ul li {
       position: relative;
       padding-left:25px;
       font-family: "Voltaire", sans-serif;
-      color: #ffffff;
+      color: #D9E2F0;
       font-size: 20px;
       line-height: 20px;
       letter-spacing: 0;

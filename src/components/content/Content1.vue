@@ -15,7 +15,7 @@ const icon = new URL(`@/assets/images/icon.png`, import.meta.url).href
     <img class="an-top-banner-image an-desktop" :src="image"/>
     <div class="an-top-banner-content-wraper">
     <div class="an-top-banner-content">
-      <h4>EXECUTIVE<img :src="icon">FFICES.</h4>
+      <h4>EXECUTIVE<img :src="icon">FFICES<span class="orenge">.</span></h4>
     <p>GRUTA 19 CORP redefine la experiencia laboral con un entorno exclusivo,disenado para lideres y visionarios. </p>
    <div class="an-top-banner-buttons">
     <button class="one">Contratar</button>
@@ -54,6 +54,7 @@ img.an-top-banner-image {
     align-items: baseline;
     flex-direction: column;
     justify-content: center;
+    padding-left:43px;
 }
 .an-top-banner-content h4 {
     color: #ffffff;
@@ -62,7 +63,10 @@ img.an-top-banner-image {
     letter-spacing: 0;
     font-family: "Voltaire", sans-serif;
     margin: 0 0 32px 0;
-    max-width: 520px;
+    max-width: 568px;
+}
+span.orenge {
+    color: #f97316;
 }
 .an-top-banner-content p {
     color: #D9E2F0;
@@ -143,7 +147,6 @@ img.an-top-banner-image {
     font-size: 66px;
     margin: 0 0 16px 0;
     line-height: 86px;
-    padding-right: 100px;
 }
 .an-top-banner-buttons {
     max-width: 100%;
@@ -158,5 +161,10 @@ img.an-top-banner-image {
     line-height:26px;
 }
 
+}
+@media(max-width:600px){
+.an-top-banner-content h4[data-v-c56ef0d1] {
+    width: 300px;
+}
 }
 </style>

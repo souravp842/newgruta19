@@ -48,7 +48,7 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 32px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -218,9 +218,10 @@ export default {
     color: #D9E2F0;
 }
 @media (max-width:767px){
-  .grid[data-v-c25fea75] {
+.grid[data-v-c25fea75][data-v-c25fea75] {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 0px 20px;
 }
 }
 </style>

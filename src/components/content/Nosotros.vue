@@ -127,6 +127,7 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
     letter-spacing: 0;
     text-align: center;
     margin-top: 25px;
+    color: #D9E2F0;
 }
 
 .location-section {
@@ -134,6 +135,9 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
     margin: 0 auto;
     max-width: 1280px;
     padding: 0px;
+}
+.map-box iframe {
+    border-radius: 10px;
 }
 .location-content {
     display: flex;
@@ -229,6 +233,10 @@ import NosotrosamenidadesCard from '@/components/sections/NosotrosamenidadesCard
     width: 100%;
     padding: 16px;
 }
+.text-section {
+    padding: 72px 10px;
+}
+
 .grid {
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%;

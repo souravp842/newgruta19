@@ -55,8 +55,9 @@ export default {
 </script>
 <style scoped>
 .nav-link {
-  font-weight: 500;
-  cursor: pointer;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
 }
 .nav-link:hover {
   color: #F97316 !important;
@@ -85,11 +86,20 @@ nav.navbar .container-fluid {
     padding-left: 45px;
     padding-right: 45px;
 }
+div#navbarNav .navbar-nav {
+    margin-left: 120px;
+    gap: 18px;
+}
 nav.navbar .container-fluid .btn{
   border-radius: 0 !important;
 }
 nav.navbar {
     background-color: #1C2023 !important;
+}
+@media(max-width:1020px){
+div#navbarNav .navbar-nav {
+    margin-left: 0px;
+}
 }
 @media(max-width:900px){
   nav.navbar .container-fluid {
@@ -98,6 +108,10 @@ nav.navbar {
 }
 .btn-column{
   flex-direction: column;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.py-3 {
+    border-bottom: 1px solid #F5F5F5;
 }
 }
 </style>

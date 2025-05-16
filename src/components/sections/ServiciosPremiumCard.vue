@@ -47,6 +47,7 @@ export default {
   letter-spacing: 0;
   text-align: center;
   margin: 0;
+  color:#D9E2F0;
 }
 .servicios_premium_card .main_btn_flex {
   display: flex;

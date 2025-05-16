@@ -9,6 +9,10 @@ defineProps({
     type: [String, Number],
     required: false,
   },
+  title:{
+  type: [String, Number],
+    required: false,
+  },
   message1:{
     type: [String, Number],
     required: false
@@ -28,6 +32,10 @@ defineProps({
   message4:{
     type: [String, Number],
     required: false
+  },
+    message5:{
+    type: [String, Number],
+    required: false
   }
 })
 </script>
@@ -43,15 +51,16 @@ export default {
 </script>
 <template>
   <div class="card-container text-white">
-    <h4>Day Pass</h4>
+    <h4 class="card-title">{{ title }}</h4>
     <div class="price-display">
+      <p class="por-dia">{{ message5 }}</p>
       <span class="price">{{ price }}</span> <span class="currency">MXN</span>
     </div>
-    <p class="por-dia">Por día</p>
-    <ul class="features list-unstyled mb-4">
-      <li><i class="bi bi-check-lg text-warning me-2"></i> Acceso de 8am a 8pm</li>
+    <p class="por-dia">{{ message4 }}</p>
+    <ul class="features list-unstyled mt-4 mb-4">
       <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message1 }}</li>
       <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message2 }}</li>
+      <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message3 }}</li>
     </ul>
     <button class="btn btn-orange w-100 mb-3" @click="showModal = true">Reservar Ahora1</button>
     <!-- Show Popup Button -->
@@ -78,6 +87,26 @@ export default {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 45px;
+}
+h4.card-title {
+      font-family: "Voltaire", sans-serif;  
+}
+ul.features li {
+    font-size: 20px;
+    font-family: "Voltaire", sans-serif;
+    line-height: 32px;
+}
+
+.price-display .price[data-v-8782ac84] {
+    font-weight: 500;
+    font-family: 'Voltaire';
+}
+p.por-dia {
+    font-size: 20px;
+    font-family: 'Official Book';
+    font-weight: 400;
+    color: #FFFFFFCC;
+    margin-bottom: -8px;
 }
 .an-pass-wraper h5 {
     color: #FFFFFF;
@@ -113,7 +142,7 @@ export default {
     color: #FFFFFF;
     font-size: 48px;
     font-weight: 400 !important;
-    line-height: normal;
+    line-height: norma70px;
     letter-spacing: 0;
 }
 .an-pass-card-wraper .card-container span.currency {
@@ -129,7 +158,7 @@ export default {
     font-family: Official Book;
     font-weight: 400;
     font-size: 20px;
-    line-height: 16px;
+    line-height: 32px;
     letter-spacing: 0;
     padding-top: 1px;
 }
@@ -170,6 +199,9 @@ export default {
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
+}
+ button.btn {
+    height: 48px;
 }
 /* responsive */
 @media(max-width:850px){

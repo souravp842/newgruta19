@@ -28,6 +28,14 @@ defineProps({
   message4:{
     type: [String, Number],
     required: false
+  },
+    message5:{
+    type: [String, Number],
+    required: false
+  },
+    message6:{
+    type: [String, Number],
+    required: false
   }
 })
 </script>
@@ -43,11 +51,11 @@ export default {
 </script>
 <template>
   <div class="card-container text-white">
-    <h4>Day Pass</h4>
+    <h4>{{ message5 }}</h4>
     <div class="price-display">
       <span class="price">{{ price }}</span> <span class="currency">MXN</span>
     </div>
-    <p class="por-dia">Por día</p>
+    <p class="por-dia">{{ message6 }}</p>
     <ul class="features list-unstyled mb-4">
       <li><i class="bi bi-check-lg text-warning me-2"></i> Acceso de 8am a 8pm</li>
       <li><i class="bi bi-check-lg text-warning me-2"></i> {{ message1 }}</li>
@@ -171,6 +179,10 @@ export default {
     letter-spacing: 0;
     text-align: center;
 }
+.an-pass-card-wraper .card-container:first-child {
+    display: flex;
+    flex-direction: column;
+}
 /* responsive */
 @media(max-width:850px){
   .an-pass-section {
@@ -189,6 +201,14 @@ export default {
 }
 .an-pass-wraper h5 {
     line-height: 64px;
+}
+.an-pass-card-wraper .card-container:first-child {
+    display: flex;
+    flex-direction: column;
+}
+.an-pass-card-wraper .card-container:first-child button.btn.btn-orange {
+    order: 1;
+    margin-top: 20px;
 }
 }
 /* MOdel style */
